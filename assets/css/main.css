@@ -228,6 +228,14 @@ a:hover {
   align-items: center;
 }
 
+.site-nav .nav-ctas a.btn-primary {
+  color: var(--night);
+}
+
+.site-nav .nav-ctas a.btn-primary:hover {
+  color: var(--night);
+}
+
 /* —— Buttons —— */
 .btn {
   display: inline-flex;
