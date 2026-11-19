@@ -1,0 +1,8 @@
+{
+    "name": "metro-detroit-holiday-lighting/site",
+    "description": "Metro Detroit Holiday Lighting marketing site",
+    "require": {
+        "php": ">=8.0",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

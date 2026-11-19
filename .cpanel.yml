@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html
+    - /usr/bin/rsync -a --exclude='.git' --exclude='.cpanel.yml' --exclude='**/mail-config.php' --exclude='docs/' --exclude='bin/' --exclude='composer.json' --exclude='composer.lock' ./ $DEPLOYPATH/
+    - /bin/chmod 755 $DEPLOYPATH
+    - /bin/chmod 644 $DEPLOYPATH/.htaccess 2>/dev/null || true
