@@ -18,9 +18,8 @@ git push origin main
 
 ## Live (Reclaim cPanel)
 
-1. Git Version Control → clone this repo to `$HOME/repositories/metro-detroit-holiday-lighting` (not `public_html`).
-2. Add a **read-only deploy key** in GitHub → Settings → Deploy keys.
-3. **Update from Remote** → **Deploy HEAD Commit** (runs [`.cpanel.yml`](.cpanel.yml) → `$HOME/public_html`).
+1. Git Version Control → clone `https://github.com/imcdon/metro-detroit-holiday-lighting.git` to `$HOME/repositories/metro-detroit-holiday-lighting` (not `public_html`).
+2. **Update from Remote** → **Deploy HEAD Commit** (runs [`.cpanel.yml`](.cpanel.yml) → `$HOME/public_html`).
 4. Once on server: copy `includes/mail-config.example.php` → `includes/mail-config.php` and set SMTP (see [DEPLOY.md](DEPLOY.md)).
 
 ## Staging (Webstar)

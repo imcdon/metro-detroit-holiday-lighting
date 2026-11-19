@@ -15,10 +15,9 @@
 **Server IP (GoDaddy A record):** `138.197.163.92`
 
 1. cPanel → **Git Version Control** → **Create/Clone**.
-2. **Clone URL:** `git@github.com:imcdon/metro-detroit-holiday-lighting.git` (or HTTPS).
+2. **Clone URL (public repo):** `https://github.com/imcdon/metro-detroit-holiday-lighting.git`
 3. **Repository path:** `/home/YOURUSER/repositories/metro-detroit-holiday-lighting` — **not** `public_html`.
-4. GitHub → repo **Deploy keys** → paste cPanel’s public key (read-only).
-5. **Update from Remote** → **Deploy HEAD Commit** (runs [`.cpanel.yml`](.cpanel.yml)).
+4. **Update from Remote** → **Deploy HEAD Commit** (runs [`.cpanel.yml`](.cpanel.yml)). No deploy key needed for a public clone.
 6. Remove leftover **WordPress** files in `public_html` if rsync did not overwrite everything (`wp-content`, etc.).
 7. **SSL:** AutoSSL after DNS is pointed at Reclaim.
 8. **Mail (one-time, server only):** copy [`includes/mail-config.example.php`](includes/mail-config.example.php) to `includes/mail-config.php` on the server; create `noreply@metrodetroitholidaylighting.com` in cPanel if using SMTP. Otherwise the form falls back to PHP `mail()`.
