@@ -30,7 +30,7 @@ function mdhl_cities(): array
             'county' => 'Oakland',
             'nearby' => ['birmingham', 'west-bloomfield', 'troy', 'pontiac'],
             'intro' => 'Bloomfield Hills properties often mean taller peaks, longer gutters, and landscaping that deserves careful tree wraps. Metro Detroit Holiday Lighting plans displays around the architecture — owner-operated and fully insured — so estates and family homes look finished from the curb without anyone on a ladder.',
-            'gallery_match' => ['/^residential-/i', '/roof/i', '/rood/i'],
+            'gallery_match' => ['/^residential-/i', '/roof/i', '/rood/i', '/mdhl-bloomfield-hills/i'],
         ],
         [
             'slug' => 'troy',

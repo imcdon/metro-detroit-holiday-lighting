@@ -98,7 +98,7 @@ require __DIR__ . '/includes/header.php';
         <div class="scroll-stage__shade" aria-hidden="true"></div>
         <div class="scroll-stage__ui">
             <div class="scroll-stage__ui-inner">
-                <p class="scroll-stage__kicker">Décorations for Day and Night</p>
+                <p class="scroll-stage__kicker">Decorations for Day and Night</p>
                 <p class="scroll-stage__caption" data-scroll-caption><?= htmlspecialchars($scroll_frames[0]['caption']) ?></p>
                 <div class="scroll-stage__dots" role="presentation">
                     <?php foreach ($scroll_frames as $i => $_frame): ?>

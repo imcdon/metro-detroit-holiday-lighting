@@ -49,8 +49,8 @@ $audiences = [
     [
         'title' => 'Homeowners',
         'body' => 'Custom holiday lighting that fits your home — rooftops, trees, walks, and accents — without you climbing a ladder or fighting tangled cords.',
-        'image' => 'assets/img/gallery/residential-08-clark-white-tree.jpg',
-        'image_alt' => 'Residential home with white holiday tree lighting',
+        'image' => 'assets/img/gallery/mdhl-bloomfield-hills-5.jpg',
+        'image_alt' => 'Bloomfield Hills home with professional holiday lighting',
         'url' => 'homeowners/',
     ],
     [
@@ -151,14 +151,14 @@ $gallery_images = mdhl_gallery_images();
  */
 $scroll_frame_defs = [
     [
-        'file' => 'residential-07-birchwood-white-tree-snow.jpg',
-        'caption' => 'Warm white trees against Michigan snow',
-        'alt' => 'Residential holiday tree lighting in snow',
+        'file' => 'mdhl-bloomfield-hills-7.jpg',
+        'caption' => 'Holiday décor that reads in daylight',
+        'alt' => 'Bloomfield Hills home with holiday décor during the day',
     ],
     [
-        'file' => 'residential-01-birchwood-all-white-house-tree.jpg',
-        'caption' => 'Clean rooflines and balanced curb appeal',
-        'alt' => 'Home with white holiday lights on house and trees',
+        'file' => 'mdhl-bloomfield-hills-8.jpg',
+        'caption' => 'The same display after dark',
+        'alt' => 'Bloomfield Hills home with holiday lighting at night',
     ],
 ];
 
@@ -177,9 +177,10 @@ foreach ($scroll_frame_defs as $frame) {
 }
 unset($scroll_frame_defs, $frame, $path);
 
-$hero_image_file = dirname(__DIR__) . '/assets/img/hero-soaring-eagle.jpg';
-$hero_image = is_file($hero_image_file) ? url('assets/img/hero-soaring-eagle.jpg') : '';
-$hero_image_alt = 'Holiday lighting at Soaring Eagle by Metro Detroit Holiday Lighting';
+$hero_image_rel = 'assets/img/gallery/mdhl-bloomfield-hills-8.jpg';
+$hero_image_file = dirname(__DIR__) . '/' . $hero_image_rel;
+$hero_image = is_file($hero_image_file) ? url($hero_image_rel) : '';
+$hero_image_alt = 'Bloomfield Hills home with holiday lighting by Metro Detroit Holiday Lighting';
 if ($hero_image === '' && $gallery_images !== []) {
     $hero_image = $gallery_images[0]['url'];
     $hero_image_alt = $gallery_images[0]['alt'];

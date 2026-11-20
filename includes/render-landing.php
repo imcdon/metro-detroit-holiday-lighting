@@ -38,6 +38,7 @@ if ($landing_hero !== '') {
     $og_image = absolute_url(ltrim($hero_rel, '/'));
     $preload_image = $landing_hero;
 }
+$landing_hero_dims = $landing_hero !== '' ? mdhl_image_dimensions_from_rel($hero_rel) : ['width' => 0, 'height' => 0];
 
 if (!empty($landing['gallery_files']) && is_array($landing['gallery_files'])) {
     $gallery_strip = mdhl_gallery_pick_files($landing['gallery_files']);
@@ -56,7 +57,7 @@ foreach ($related_slugs as $relSlug) {
 require __DIR__ . '/header.php';
 ?>
 <section class="page-hero landing-hero<?= $landing_hero !== '' ? ' landing-hero--split' : '' ?>">
-    <div class="container landing-hero__grid">
+    <div class="container-wide landing-hero__grid">
         <div class="landing-hero__copy">
             <p class="breadcrumbs">
                 <a href="<?= htmlspecialchars(url()) ?>">Home</a> /
@@ -76,9 +77,10 @@ require __DIR__ . '/header.php';
                 <img
                     src="<?= htmlspecialchars($landing_hero) ?>"
                     alt="<?= htmlspecialchars($landing_hero_alt) ?>"
-                    width="900"
-                    height="700"
+                    width="<?= (int) ($landing_hero_dims['width'] ?: 900) ?>"
+                    height="<?= (int) ($landing_hero_dims['height'] ?: 700) ?>"
                     fetchpriority="high"
+                    decoding="async"
                 >
             </div>
         <?php endif; ?>
@@ -92,19 +94,12 @@ require __DIR__ . '/header.php';
     $sectionImageUrl = ($sectionImageFile !== '' && is_file($sectionImageFile)) ? url($sectionImageRel) : '';
     $sectionImageAlt = (string) ($section['image_alt'] ?? $section['h2']);
     $hasPanelImage = $sectionImageUrl !== '';
-    $imageFitNatural = ($section['image_fit'] ?? '') === 'natural';
-    $imgWidth = 900;
-    $imgHeight = 700;
-    if ($hasPanelImage && $imageFitNatural) {
-        $size = @getimagesize($sectionImageFile);
-        if (is_array($size) && $size[0] > 0 && $size[1] > 0) {
-            $imgWidth = (int) $size[0];
-            $imgHeight = (int) $size[1];
-        }
-    }
+    $sectionDims = $hasPanelImage ? mdhl_image_dimensions_from_rel($sectionImageRel) : ['width' => 0, 'height' => 0];
+    $imgWidth = $sectionDims['width'] ?: 900;
+    $imgHeight = $sectionDims['height'] ?: 700;
     ?>
 <section class="section<?= $si % 2 === 0 ? ' section--snow' : '' ?><?= $hasPanelImage ? ' section--panel' : '' ?>">
-    <div class="container<?= $hasPanelImage ? ' landing-panel' . ($si % 2 === 1 ? ' landing-panel--flip' : '') . ($imageFitNatural ? ' landing-panel--natural' : '') : ' prose-narrow' ?>">
+    <div class="<?= $hasPanelImage ? 'container-wide landing-panel landing-panel--natural' . ($si % 2 === 1 ? ' landing-panel--flip' : '') : 'container prose-narrow' ?>">
         <div class="landing-panel__copy">
             <h2><?= htmlspecialchars($section['h2']) ?></h2>
             <p><?= htmlspecialchars($section['body']) ?></p>
@@ -117,7 +112,7 @@ require __DIR__ . '/header.php';
             <?php endif; ?>
         </div>
         <?php if ($hasPanelImage): ?>
-            <div class="landing-panel__media<?= $imageFitNatural ? ' landing-panel__media--natural' : '' ?>">
+            <div class="landing-panel__media landing-panel__media--natural">
                 <img
                     src="<?= htmlspecialchars($sectionImageUrl) ?>"
                     alt="<?= htmlspecialchars($sectionImageAlt) ?>"
@@ -142,7 +137,14 @@ require __DIR__ . '/header.php';
         <div class="gallery-preview">
             <?php foreach ($gallery_strip as $img): ?>
                 <a href="<?= htmlspecialchars(url('gallery/')) ?>">
-                    <img src="<?= htmlspecialchars($img['url']) ?>" alt="<?= htmlspecialchars($img['alt']) ?>" loading="lazy" width="800" height="600">
+                    <img
+                        src="<?= htmlspecialchars($img['url']) ?>"
+                        alt="<?= htmlspecialchars($img['alt']) ?>"
+                        loading="lazy"
+                        decoding="async"
+                        width="<?= (int) ($img['width'] ?: 800) ?>"
+                        height="<?= (int) ($img['height'] ?: 600) ?>"
+                    >
                 </a>
             <?php endforeach; ?>
         </div>

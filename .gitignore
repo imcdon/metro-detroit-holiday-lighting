@@ -16,6 +16,7 @@ debug-*.log
 
 # Raw drop folder (web-ready copies live in gallery/, audiences/, hero-*, logo-*)
 assets/img/Metro Detroit Holiday Lighting/
+assets/img/masters/
 
 # OS / IDE
 .DS_Store

@@ -3,6 +3,31 @@
 declare(strict_types=1);
 
 /**
+ * Pixel dimensions for a project-relative image path (e.g. assets/img/gallery/foo.jpg).
+ *
+ * @return array{width:int,height:int}
+ */
+function mdhl_image_dimensions_from_rel(string $rel): array
+{
+    $rel = ltrim(str_replace('\\', '/', $rel), '/');
+    if ($rel === '') {
+        return ['width' => 0, 'height' => 0];
+    }
+
+    $file = dirname(__DIR__) . '/' . $rel;
+    if (!is_file($file)) {
+        return ['width' => 0, 'height' => 0];
+    }
+
+    $size = @getimagesize($file);
+    if (!is_array($size) || $size[0] < 1 || $size[1] < 1) {
+        return ['width' => 0, 'height' => 0];
+    }
+
+    return ['width' => (int) $size[0], 'height' => (int) $size[1]];
+}
+
+/**
  * List gallery image files from assets/img/gallery/.
  *
  * @return list<array{file:string,url:string,alt:string}>

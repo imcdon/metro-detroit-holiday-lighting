@@ -79,7 +79,14 @@ require dirname(__DIR__) . '/includes/header.php';
             <div class="gallery-preview" style="margin-bottom:2rem;">
                 <?php foreach ($cityGallery as $img): ?>
                     <a href="<?= htmlspecialchars(url('gallery/')) ?>">
-                        <img src="<?= htmlspecialchars($img['url']) ?>" alt="<?= htmlspecialchars($img['alt']) ?>" loading="lazy" width="800" height="600">
+                        <img
+                            src="<?= htmlspecialchars($img['url']) ?>"
+                            alt="<?= htmlspecialchars($img['alt']) ?>"
+                            loading="lazy"
+                            decoding="async"
+                            width="<?= (int) ($img['width'] ?: 800) ?>"
+                            height="<?= (int) ($img['height'] ?: 600) ?>"
+                        >
                     </a>
                 <?php endforeach; ?>
             </div>
