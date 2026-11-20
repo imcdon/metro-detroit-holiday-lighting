@@ -27,11 +27,13 @@ $mail_from = '';
 
 $trust_line = 'Professionally designed. Fully insured. Owner-operated.';
 
-$service_nav = mdhl_service_nav();
+$service_nav = mdhl_audience_nav();
+$specialty_nav = mdhl_specialty_nav();
 
 $nav_links = [
     'Home' => '',
     'Services' => 'homeowners/',
+    'Specialties' => 'wreaths/',
     'Gallery' => 'gallery/',
     'Service Areas' => 'service-areas/',
     'Contact' => 'contact/',

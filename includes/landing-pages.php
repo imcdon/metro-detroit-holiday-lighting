@@ -12,6 +12,7 @@ function mdhl_landing_pages(): array
     return [
         'homeowners' => [
             'nav_label' => 'Homeowners',
+            'nav_group' => 'audience',
             'title' => 'Residential Holiday Lighting & Décor | Metro Detroit',
             'description' => 'Residential holiday lighting—rooflines, tree wraps, greenery & walks. Oakland, Wayne, Macomb & Genesee. Owner-operated. Free quote. (248) 525-4715.',
             'h1' => 'Residential holiday lighting and décor for Metro Detroit homeowners',
@@ -79,6 +80,7 @@ function mdhl_landing_pages(): array
 
         'businesses' => [
             'nav_label' => 'Businesses',
+            'nav_group' => 'audience',
             'title' => 'Commercial Holiday Lighting Metro Detroit | Businesses',
             'description' => 'Commercial holiday lighting for storefronts, offices & dealerships. Insured; Steve does the work. Oakland, Wayne, Macomb & Genesee. Free quote. (248) 525-4715.',
             'h1' => 'Commercial holiday lighting and décor for Metro Detroit businesses',
@@ -137,6 +139,7 @@ function mdhl_landing_pages(): array
 
         'hoa-property-managers' => [
             'nav_label' => 'HOAs & Property Managers',
+            'nav_group' => 'audience',
             'title' => 'HOA Holiday Lighting & Décor Metro Detroit | HOAs',
             'description' => 'HOA & community holiday lighting—entrances, clubhouses & common areas. Insured, owner-operated. Four-county Metro Detroit. Free quote. (248) 525-4715.',
             'h1' => 'HOA and community holiday lighting and décor',
@@ -201,6 +204,7 @@ function mdhl_landing_pages(): array
 
         'wreaths' => [
             'nav_label' => 'Wreaths',
+            'nav_group' => 'specialty',
             'title' => 'Holiday Wreath Installation Service Metro Detroit',
             'description' => 'Holiday wreath hanging & lighted garland for Metro Detroit homes and businesses. Installed by Steve. (248) 525-4715.',
             'h1' => 'Holiday wreath installation service in Metro Detroit',
@@ -264,6 +268,7 @@ function mdhl_landing_pages(): array
 
         'tree-wraps' => [
             'nav_label' => 'Tree wraps',
+            'nav_group' => 'specialty',
             'title' => 'Branch Wrap Tree Lights Metro Detroit | Tree Wrapping',
             'description' => 'Branch wrap tree lights and outdoor tree light wrapping in Metro Detroit. Professional holiday tree wrapping for landscape trees. Call (248) 525-4715.',
             'h1' => 'Branch wrap tree lights for Metro Detroit landscapes',
@@ -317,6 +322,7 @@ function mdhl_landing_pages(): array
 
         'high-roof-lighting' => [
             'nav_label' => 'High roofs',
+            'nav_group' => 'specialty',
             'title' => 'High Roof Holiday Light Installation Metro Detroit',
             'description' => 'High roof holiday light installation and steep roof holiday lighting in Metro Detroit. Insured tall roofline holiday lights by Steve. Call (248) 525-4715.',
             'h1' => 'High roof holiday light installation in Metro Detroit',
@@ -390,15 +396,38 @@ function mdhl_landing_by_slug(string $slug): ?array
 }
 
 /**
- * Nav items for Services dropdown: label => path relative to site root.
+ * Nav items for a landing-page group: label => path relative to site root.
  *
  * @return array<string, string>
  */
-function mdhl_service_nav(): array
+function mdhl_nav_for_group(string $group): array
 {
     $out = [];
     foreach (mdhl_landing_pages() as $slug => $page) {
+        if (($page['nav_group'] ?? '') !== $group) {
+            continue;
+        }
         $out[$page['nav_label']] = $slug . '/';
     }
     return $out;
+}
+
+/**
+ * Nav items for Services dropdown (audience landings).
+ *
+ * @return array<string, string>
+ */
+function mdhl_audience_nav(): array
+{
+    return mdhl_nav_for_group('audience');
+}
+
+/**
+ * Nav items for Specialties dropdown (specialty landings).
+ *
+ * @return array<string, string>
+ */
+function mdhl_specialty_nav(): array
+{
+    return mdhl_nav_for_group('specialty');
 }

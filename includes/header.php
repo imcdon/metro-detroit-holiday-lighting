@@ -78,15 +78,23 @@ $schema_service = $schema_service ?? null;
             </button>
             <nav id="site-nav" class="site-nav" aria-label="Primary">
                 <ul>
-                    <?php foreach ($nav_links as $label => $href): ?>
-                        <?php if ($label === 'Services' && !empty($service_nav)): ?>
+                    <?php
+                    $nav_dropdowns = [
+                        'Services' => $service_nav ?? [],
+                        'Specialties' => $specialty_nav ?? [],
+                    ];
+                    foreach ($nav_links as $label => $href):
+                        $dropdown_items = $nav_dropdowns[$label] ?? null;
+                        if (is_array($dropdown_items) && $dropdown_items !== []):
+                            $dropdown_id = 'nav-' . strtolower($label);
+                            ?>
                             <li class="nav-item--dropdown">
-                                <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="nav-services">
-                                    Services
+                                <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="<?= htmlspecialchars($dropdown_id) ?>">
+                                    <?= htmlspecialchars($label) ?>
                                 </button>
-                                <ul id="nav-services" class="nav-dropdown">
-                                    <?php foreach ($service_nav as $svcLabel => $svcHref): ?>
-                                        <li><a href="<?= htmlspecialchars(url($svcHref)) ?>"><?= htmlspecialchars($svcLabel) ?></a></li>
+                                <ul id="<?= htmlspecialchars($dropdown_id) ?>" class="nav-dropdown">
+                                    <?php foreach ($dropdown_items as $itemLabel => $itemHref): ?>
+                                        <li><a href="<?= htmlspecialchars(url($itemHref)) ?>"><?= htmlspecialchars($itemLabel) ?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
