@@ -12,7 +12,7 @@ $form = $_SESSION['contact_form'] ?? [];
 unset($_SESSION['contact_success'], $_SESSION['contact_error'], $_SESSION['contact_form']);
 
 $page_title = 'Contact & Quote | Metro Detroit Holiday Lighting';
-$page_description = 'Request a holiday lighting quote for your Metro Detroit home, business, or HOA. Call (248) 525-4715 or send photos by email.';
+$page_description = 'Get a holiday lighting quote: text or email a property photo with your city. Homes, businesses & HOAs. (248) 525-4715.';
 $canonical_path = '/contact/';
 $schema_breadcrumbs = [
     ['name' => 'Home', 'url' => absolute_url('')],
@@ -25,7 +25,7 @@ require dirname(__DIR__) . '/includes/header.php';
     <div class="container">
         <p class="breadcrumbs"><a href="<?= htmlspecialchars(url()) ?>">Home</a> / Contact</p>
         <h1>Get a quote</h1>
-        <p>Text a photo of the house, storefront, or community entrance. Include your city and what you want lit — Steven follows up with a plan.</p>
+        <p>Text a photo of the house, storefront, or community entrance. Include your city and what you want lit — Steve follows up with a plan.</p>
         <p style="margin-top:1rem;">
             <a class="btn btn-primary" href="<?= htmlspecialchars($sms_href) ?>">Text a photo</a>
             <a class="btn btn-ghost" href="<?= htmlspecialchars($phone_href) ?>">Call <?= htmlspecialchars($phone) ?></a>
@@ -42,7 +42,7 @@ require dirname(__DIR__) . '/includes/header.php';
                 <li><strong>Call:</strong> <a href="<?= htmlspecialchars($phone_href) ?>"><?= htmlspecialchars($phone) ?></a></li>
                 <li><strong>Email photos:</strong> <a href="<?= htmlspecialchars($email_href) ?>"><?= htmlspecialchars($email) ?></a></li>
                 <li>Tell us residential, commercial, or HOA.</li>
-                <li>Steven answers and quotes from the photos.</li>
+                <li>Steve answers and quotes from the photos.</li>
             </ul>
             <p style="margin:1.25rem 0 0;color:var(--ink-muted);"><?= htmlspecialchars($trust_line) ?></p>
         </aside>

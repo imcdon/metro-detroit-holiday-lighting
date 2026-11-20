@@ -1,8 +1,8 @@
 # Metro Detroit holiday lighting — competitor intelligence (MDHL)
 
-Internal snapshot for Ian / Steven. Public research only — no invented rankings or traffic. Companion intake: [CLIENT-INPUTS.md](CLIENT-INPUTS.md). GBP / live parity: [GBP-AND-LIVE-PARITY.md](GBP-AND-LIVE-PARITY.md).
+Internal snapshot for Ian / Steve. Public research only — no invented rankings or traffic. Companion intake: [CLIENT-INPUTS.md](CLIENT-INPUTS.md). GBP / live parity: [GBP-AND-LIVE-PARITY.md](GBP-AND-LIVE-PARITY.md).
 
-**Subject:** [Metro Detroit Holiday Lighting](https://metrodetroitholidaylighting.com) — owner-operated (Steven), 20 years, Oakland / Wayne / Macomb.
+**Subject:** [Metro Detroit Holiday Lighting](https://metrodetroitholidaylighting.com) — owner-operated (Steve), 20 years, Oakland / Wayne / Macomb.
 
 ---
 
@@ -61,7 +61,7 @@ Not install competitors: drive-through shows (Nite Lites, Wayne County Lightfest
 | Home / business / HOA pages | Strong | Trillium stronger on municipal |
 | Owner on the job | Differentiator | Emphasize above the fold |
 | Photo / text quote | Matches Northern Lights | Keep |
-| Testimonials | Hidden until Steven supplies | Need 3–5 real quotes |
+| Testimonials | Hidden until Steve supplies | Need 3–5 real quotes |
 | Pricing on site | Custom-quote FAQ | Optional band after approval |
 | City SEO | 25+ cities + priority intros | Quality over more thin pages |
 
@@ -75,7 +75,7 @@ Not install competitors: drive-through shows (Nite Lites, Wayne County Lightfest
 - [x] Priority city intros + gallery strips — `includes/cities.php`, `service-areas/city.php`
 - [x] HOA / businesses landing expansions — `includes/landing-pages.php`
 - [x] GBP + live parity checklist — `docs/GBP-AND-LIVE-PARITY.md`
-- [ ] Steven fills testimonials / optional price band — then deploy
+- [ ] Steve fills testimonials / optional price band — then deploy
 
 ---
 

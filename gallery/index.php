@@ -3,7 +3,7 @@ declare(strict_types=1);
 require dirname(__DIR__) . '/includes/config.php';
 
 $page_title = 'Holiday Lighting Gallery | Metro Detroit Holiday Lighting';
-$page_description = 'Photos of professional holiday lighting installs by Metro Detroit Holiday Lighting across Oakland, Wayne, and Macomb County.';
+$page_description = 'Holiday lighting photos—residential, commercial & HOA installs across Oakland, Wayne, Macomb & Genesee. Call (248) 525-4715.';
 $canonical_path = '/gallery/';
 $schema_breadcrumbs = [
     ['name' => 'Home', 'url' => absolute_url('')],

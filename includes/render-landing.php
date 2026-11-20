@@ -136,7 +136,7 @@ require __DIR__ . '/header.php';
 <section class="section section--tight">
     <div class="container-wide">
         <div class="section__head container" style="margin-left:0;padding-left:0;">
-            <h2>Recent <?= htmlspecialchars(strtolower($landing['nav_label'])) ?> work</h2>
+            <h2><?= htmlspecialchars((string) ($landing['gallery_heading'] ?? 'Recent ' . strtolower((string) $landing['nav_label']) . ' work')) ?></h2>
             <p class="section__lead">Examples from Metro Detroit installs. More in the gallery.</p>
         </div>
         <div class="gallery-preview">
@@ -194,7 +194,7 @@ require __DIR__ . '/header.php';
     <div class="container">
         <div class="cta-band">
             <h2>Ready for a quote?</h2>
-            <p>Text a photo of the property. Include your city and what you want lit. Steven will follow up.</p>
+            <p>Text a photo of the property. Include your city and what you want lit. <?= htmlspecialchars($owner_name) ?> will follow up.</p>
             <div class="cta-band__actions">
                 <a class="btn btn-primary" href="<?= htmlspecialchars($sms_href) ?>">Text a photo</a>
                 <a class="btn btn-ghost" href="<?= htmlspecialchars($phone_href) ?>"><?= htmlspecialchars($phone) ?></a>

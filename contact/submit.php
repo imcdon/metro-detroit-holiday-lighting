@@ -146,7 +146,7 @@ if (!$sent) {
 
 if ($sent) {
     unset($_SESSION['contact_form']);
-    $_SESSION['contact_success'] = 'Thanks — your message has been sent. Steven will get back to you soon.';
+    $_SESSION['contact_success'] = 'Thanks — your message has been sent. Steve will get back to you soon.';
 } else {
     $_SESSION['contact_error'] = 'Sorry, we could not send your message right now. Please call ' . $phone . ' instead.';
 }

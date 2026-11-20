@@ -2,8 +2,8 @@
 declare(strict_types=1);
 require dirname(__DIR__) . '/includes/config.php';
 
-$page_title = 'Holiday Lighting Service Areas in Metro Detroit | Metro Detroit Holiday Lighting';
-$page_description = 'Professional holiday lighting across Oakland, Wayne, and Macomb County — Birmingham, Troy, Rochester Hills, Livonia, Sterling Heights, and more. Call (248) 525-4715.';
+$page_title = 'Holiday Lighting Service Areas | Metro Detroit Holiday Lighting';
+$page_description = 'Holiday lighting across Oakland, Wayne, Macomb & Genesee—Birmingham, Troy, Flint, Grand Blanc & more. (248) 525-4715.';
 $canonical_path = '/service-areas/';
 $schema_home = true;
 $schema_breadcrumbs = [
@@ -19,7 +19,7 @@ require dirname(__DIR__) . '/includes/header.php';
     <div class="container">
         <p class="breadcrumbs"><a href="<?= htmlspecialchars(url()) ?>">Home</a> / Service Areas</p>
         <h1>Metro Detroit service areas</h1>
-        <p>Holiday lighting for homes, businesses, and HOAs across Oakland, Wayne, and Macomb County. Pick your city for local details, or call <?= htmlspecialchars($phone) ?>.</p>
+        <p>Holiday lighting for homes, businesses, and HOAs across Oakland, Wayne, Macomb, and Genesee County. Pick your city for local details, or call <?= htmlspecialchars($phone) ?>.</p>
     </div>
 </section>
 

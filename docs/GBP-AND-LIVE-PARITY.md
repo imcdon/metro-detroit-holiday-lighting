@@ -18,13 +18,13 @@ Use copy consistent with `includes/config.php` and `index.php`:
 
 - [ ] Business name exact match (no keyword stuffing)
 - [ ] Primary category appropriate (e.g. Lighting contractor / Holiday lighting if available)
-- [ ] Service areas: Oakland, Wayne, Macomb — align with cities in `includes/cities.php` (priority: Birmingham, Bloomfield Hills, Troy, Rochester Hills, Rochester, Royal Oak, Novi, Livonia, Northville, Sterling Heights)
+- [ ] Service areas: Oakland, Wayne, Macomb, Genesee — align with cities in `includes/cities.php` (priority: Birmingham, Bloomfield Hills, Troy, Rochester Hills, Rochester, Royal Oak, Novi, Livonia, Northville, Sterling Heights; Genesee: Grand Blanc, Fenton, Flint, Davison)
 - [ ] Description uses owner-operated + full-season service (design, install, mid-season, take-down, storage)
 - [ ] Phone matches site; enable messaging if used for photo quotes
 - [ ] Website URL points to live domain (not Webstar staging `/clients/...`)
-- [ ] Photos: hero / gallery samples (night installs, commercial entrance, Steven at work)
+- [ ] Photos: hero / gallery samples (night installs, commercial entrance, Steve at work)
 - [ ] Products/services listed: residential, commercial, HOA; wreaths; tree wraps; high-roof
-- [ ] Review ask after takedown (Steven); do not invent star counts on the website
+- [ ] Review ask after takedown (Steve); do not invent star counts on the website
 - [ ] Hours: reflect seasonal reality or “by appointment” if that is accurate
 
 ## Live site parity (`metrodetroitholidaylighting.com`)
@@ -48,6 +48,6 @@ Defer until testimonials and (optional) price band are filled. Non-brand ads nee
 
 | Task | Who |
 |------|-----|
-| GBP edits + review asks | Steven (with Ian assist) |
+| GBP edits + review asks | Steve (with Ian assist) |
 | Deploy Path A → live | Ian (see `DEPLOY.md`) |
-| Testimonials / price band approval | Steven → then Ian updates `config.php` |
+| Testimonials / price band approval | Steve → then Ian updates `config.php` |

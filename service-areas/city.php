@@ -13,7 +13,7 @@ if ($city === null) {
 $name = $city['name'];
 $county = $city['county'];
 $page_title = "Holiday Lighting in {$name}, MI | Metro Detroit Holiday Lighting";
-$page_description = "Professional Christmas and holiday lighting installation in {$name}, {$county} County. Design, install, mid-season care, and take-down by Steven. Call (248) 525-4715.";
+$page_description = "Professional holiday lighting in {$name}, {$county} County. Design, install, mid-season care & take-down by {$owner_name}. (248) 525-4715.";
 $canonical_path = '/service-areas/' . $city['slug'] . '/';
 $schema_home = true;
 $schema_breadcrumbs = [
@@ -32,7 +32,7 @@ foreach ($city['nearby'] as $nearSlug) {
 
 $cityIntro = trim((string) ($city['intro'] ?? ''));
 if ($cityIntro === '') {
-    $cityIntro = "Custom holiday lighting for {$name} homes, businesses, and HOAs in {$county} County — designed and installed by Steven with {$years_experience} years of Metro Detroit experience. Text a photo for a quote; mid-season care, take-down, and storage are part of the full-season service.";
+    $cityIntro = "Custom holiday lighting for {$name} homes, businesses, and HOAs in {$county} County — designed and installed by {$owner_name} with {$years_experience} years of Metro Detroit experience. Text a photo for a quote; mid-season care, take-down, and storage are part of the full-season service.";
 }
 
 $cityGallery = [];
@@ -87,7 +87,7 @@ require dirname(__DIR__) . '/includes/header.php';
 
         <div class="owner__panel" style="margin-bottom:2rem;">
             <h2 style="margin-top:0;font-size:1.35rem;font-family:var(--display);">How to get a quote in <?= htmlspecialchars($name) ?></h2>
-            <p>Text or email photos of the property to <a href="<?= htmlspecialchars($sms_href) ?>"><?= htmlspecialchars($phone) ?></a> or <a href="<?= htmlspecialchars($email_href) ?>"><?= htmlspecialchars($email) ?></a>. Mention <?= htmlspecialchars($name) ?> and whether it is a home, business, or HOA. Steven follows up with a plan.</p>
+            <p>Text or email photos of the property to <a href="<?= htmlspecialchars($sms_href) ?>"><?= htmlspecialchars($phone) ?></a> or <a href="<?= htmlspecialchars($email_href) ?>"><?= htmlspecialchars($email) ?></a>. Mention <?= htmlspecialchars($name) ?> and whether it is a home, business, or HOA. <?= htmlspecialchars($owner_name) ?> follows up with a plan.</p>
             <p style="margin-bottom:0;">
                 <a class="btn btn-primary" href="<?= htmlspecialchars($sms_href) ?>">Text a photo</a>
                 <a class="btn btn-ghost" href="<?= htmlspecialchars(url('contact/')) ?>">Open contact form</a>

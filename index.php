@@ -2,8 +2,8 @@
 declare(strict_types=1);
 require __DIR__ . '/includes/config.php';
 
-$page_title = 'Holiday Lighting Installation in Metro Detroit | Metro Detroit Holiday Lighting';
-$page_description = 'Owner-operated holiday lighting for Metro Detroit homes, storefronts, and HOA entrances. Steven designs, installs, and takes down displays with 20 years of experience. Call or text (248) 525-4715.';
+$page_title = 'Holiday Lighting & Décor | Metro Detroit Holiday Lighting';
+$page_description = $site_description;
 $canonical_path = '/';
 $schema_home = true;
 $schema_faq = true;
@@ -24,7 +24,7 @@ require __DIR__ . '/includes/header.php';
             <img class="hero__brand-mark" src="<?= htmlspecialchars(url('assets/img/logo-new.png')) ?>" alt="" width="176" height="176">
             <h1 class="hero__brand-name"><?= htmlspecialchars($site_name) ?></h1>
         </div>
-        <p class="hero__lead">Homes, storefronts, and HOA entrances — one expert from design through takedown. <?= (int) $years_experience ?> years. Fully insured.</p>
+        <p class="hero__lead">Homes, storefronts, and HOA entrances — one expert from design through takedown. <?= (int) $years_experience ?> years experience. Fully insured.</p>
         <div class="hero__actions">
             <a class="btn btn-primary" href="<?= htmlspecialchars($phone_href) ?>">
                 <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.35a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.75.32 1.54.55 2.35.68A2 2 0 0 1 22 16.92z"/></svg>
@@ -39,8 +39,8 @@ require __DIR__ . '/includes/header.php';
 <section class="section section--snow" id="who-we-serve">
     <div class="container">
         <div class="section__head">
-            <h2>Who we light</h2>
-            <p class="section__lead">Residential, commercial, and community entrances — same owner on the job.</p>
+            <h2>Who we Decorate</h2>
+            <p class="section__lead">Residences, Commercial Properties, Dealerships, and Community entrances – just to name a few.</p>
         </div>
         <div class="audience-stages">
             <?php foreach ($audiences as $audience): ?>
@@ -98,7 +98,7 @@ require __DIR__ . '/includes/header.php';
         <div class="scroll-stage__shade" aria-hidden="true"></div>
         <div class="scroll-stage__ui">
             <div class="scroll-stage__ui-inner">
-                <p class="scroll-stage__kicker">The season on the property</p>
+                <p class="scroll-stage__kicker">Décorations for Day and Night</p>
                 <p class="scroll-stage__caption" data-scroll-caption><?= htmlspecialchars($scroll_frames[0]['caption']) ?></p>
                 <div class="scroll-stage__dots" role="presentation">
                     <?php foreach ($scroll_frames as $i => $_frame): ?>
@@ -114,8 +114,8 @@ require __DIR__ . '/includes/header.php';
 <section class="section section--pine" id="process">
     <div class="container">
         <div class="section__head">
-            <h2>Full-season holiday lighting</h2>
-            <p class="section__lead">From the first photo to spring take-down, the process stays simple.</p>
+            <h2>Seamless Holiday Lighting & Décor</h2>
+            <p class="section__lead">From the first connection to final take down, the process stays simple.</p>
         </div>
         <div class="process">
             <?php foreach ($process_steps as $i => $step): ?>
@@ -136,7 +136,7 @@ require __DIR__ . '/includes/header.php';
         <div class="owner__copy">
             <p class="eyebrow">Owner-operated</p>
             <h2><?= (int) $years_experience ?> years of Metro Detroit installs</h2>
-            <p class="section__lead">Steven designs and installs holiday lighting for homes, businesses, and HOAs. Fully insured, he handles the full season — custom design, install, mid-season care, take-down, and storage — so displays look sharp from the first night through New Year.</p>
+            <p class="section__lead">Fully insured, with 2 decades of experience, from custom design to installation, maintenance, take down and storage – he handles everything, to ensure your display looks sharp for the whole season.</p>
             <p>
                 <a class="btn btn-primary" href="<?= htmlspecialchars($phone_href) ?>"><?= htmlspecialchars($phone) ?></a>
                 <a class="btn btn-ghost" href="<?= htmlspecialchars($sms_href) ?>">Text a photo</a>
@@ -194,8 +194,8 @@ require __DIR__ . '/includes/header.php';
 <section class="section" id="quote">
     <div class="container">
         <div class="cta-band">
-            <h2>Ready for a quote?</h2>
-            <p>Text a photo of the house, storefront, or community entrance. Include your city. Steven follows up with a plan — same person from design through take-down.</p>
+            <h2>Ready for a Free Quote?</h2>
+            <p>Call or message us today and we will come out and do a free estimate. Steve designs, quotes, and installs to ensure a seamless experience from start to finish.</p>
             <div class="cta-band__actions">
                 <a class="btn btn-primary" href="<?= htmlspecialchars($sms_href) ?>">Text a photo</a>
                 <a class="btn btn-ghost" href="<?= htmlspecialchars($phone_href) ?>"><?= htmlspecialchars($phone) ?></a>

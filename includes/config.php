@@ -12,9 +12,9 @@ $site_name = 'Metro Detroit Holiday Lighting';
 $site_domain = 'metrodetroitholidaylighting.com';
 $site_url = 'https://metrodetroitholidaylighting.com';
 $site_tagline = 'Holiday magic, simplified.';
-$site_description = 'Owner-operated holiday lighting for Metro Detroit homes, storefronts, and HOA entrances. Steven designs, installs, and takes down displays with 20 years of experience. Call or text (248) 525-4715.';
+$site_description = 'Owner-operated holiday lighting for Metro Detroit homes, businesses & HOAs. Design, install, care, takedown & storage. Free estimate. (248) 525-4715.';
 $company_name = 'Metro Detroit Holiday Lighting';
-$owner_name = 'Steven';
+$owner_name = 'Steve';
 $years_experience = 20;
 
 $phone = '(248) 525-4715';
@@ -53,7 +53,7 @@ $audiences = [
         'url' => 'businesses/',
     ],
     [
-        'title' => 'HOAs & property managers',
+        'title' => 'HOAs & Property Managers',
         'body' => 'Community entrances, clubhouses, and shared spaces with one clear plan, one crew, and one call for mid-season fixes.',
         'image' => 'assets/img/gallery/commercial-07-how-entrance.jpg',
         'image_alt' => 'Community entrance with professional holiday lighting',
@@ -69,39 +69,39 @@ unset($audience);
 
 $process_steps = [
     [
-        'title' => 'Custom design',
-        'body' => 'Send photos of the house, storefront, or community. Steven maps a lighting plan that fits the architecture and your budget.',
+        'title' => 'Custom Design',
+        'body' => 'Call or submit a quote with your name and address, and we\'ll schedule a date and time for Steve to come out and understand your vision. He\'ll create a full lighting and décor plan that fits your vision and budget.',
     ],
     [
-        'title' => 'Install',
+        'title' => 'Installation',
         'body' => 'Professional installation before the season hits. Clean lines, secure clips, and displays built to last through Michigan weather.',
     ],
     [
-        'title' => 'Mid-season care',
-        'body' => 'If a strand fails or a storm knocks something loose, call. Mid-season fixes keep the display looking right.',
+        'title' => 'Maintenance',
+        'body' => 'We maintain your lighting and décor all season long.',
     ],
     [
         'title' => 'Take-down',
-        'body' => 'After the holidays, lights come down carefully so nothing is left behind on the property.',
+        'body' => 'After the holidays, lights and décor come down carefully so nothing is left behind on the property.',
     ],
     [
         'title' => 'Off-season storage',
-        'body' => 'Labeled and stored for next year so you start the season ready instead of starting over.',
+        'body' => 'Décor is labeled and properly stored for next season.',
     ],
 ];
 
 $faq_items = [
     [
         'q' => 'Do you serve my city in Metro Detroit?',
-        'a' => 'Yes — we work across Oakland, Wayne, and Macomb County. Browse Service Areas or call (248) 525-4715 to confirm your neighborhood.',
+        'a' => 'Yes — we work across Oakland, Wayne, Macomb, and Genesee County. Browse Service Areas or call (248) 525-4715 to confirm your neighborhood.',
     ],
     [
         'q' => 'How do I get a quote?',
-        'a' => 'Text or email a few clear photos of the house, storefront, or community entrance to (248) 525-4715 or metrodetroitholidaylighting@gmail.com. Include your city and what you want lit. Steven will follow up with a plan.',
+        'a' => 'Call or message us with your name and address at (248) 525-4715 or metrodetroitholidaylighting@gmail.com. We will schedule a time for Steve to come out for a free estimate and put together a lighting and décor plan for your vision and budget. Photos are helpful but not required.',
     ],
     [
         'q' => 'How much does holiday lighting cost?',
-        'a' => 'Every property is custom — roofline length, height, trees, and accents change the scope. We do not publish a one-size price. Text photos of the property and Steven will send a clear quote for your home, business, or HOA.',
+        'a' => 'Every property is custom — roofline length, height, trees, and accents change the scope. We do not publish a one-size price. Call or message with your name and address and Steve will provide a clear quote for your home, business, or HOA.',
     ],
     [
         'q' => 'Are you insured?',
@@ -109,15 +109,15 @@ $faq_items = [
     ],
     [
         'q' => 'Who does the work?',
-        'a' => 'Steven owns and operates the company and does the work himself. You deal with the same person from design through take-down.',
+        'a' => 'Steve owns the company and does the work himself. You work with him directly from the first quote through final take down.',
     ],
     [
         'q' => 'Who owns the lights, and do you store them?',
-        'a' => 'Metro Detroit Holiday Lighting supplies the seasonal lighting materials for your display. Install, mid-season care, take-down, and labeled off-season storage are part of the full-season service — you are not left storing bins in the garage.',
+        'a' => 'Metro Detroit Holiday Lighting supplies the seasonal lighting and décor materials for your display. Installation, maintenance, take-down, and labeled off-season storage are part of the full-season service — you are not left storing bins in the garage.',
     ],
     [
         'q' => 'What if a strand fails mid-season?',
-        'a' => 'Call or text (248) 525-4715. Mid-season care is part of the service — if a strand fails or weather knocks something loose, Steven comes back to get the display looking right again.',
+        'a' => 'Call or text (248) 525-4715. Maintenance is part of the service — if a strand fails or weather knocks something loose, Steve comes back to get the display looking right again.',
     ],
     [
         'q' => 'When should I book?',
@@ -126,7 +126,7 @@ $faq_items = [
 ];
 
 /**
- * Real testimonials only. Leave empty until Steven supplies quotes — the section hides itself.
+ * Real testimonials only. Leave empty until Steve supplies quotes — the section hides itself.
  * Paste approved quotes from docs/CLIENT-INPUTS.md into this array.
  *
  * @var list<array{quote:string,name:string,detail?:string}>
@@ -177,7 +177,7 @@ if ($hero_image === '' && $gallery_images !== []) {
     $hero_image_alt = $gallery_images[0]['alt'];
 }
 
-// About section photo — Steven hanging a wreath.
+// About section photo — Steve hanging a wreath.
 $owner_image_file = dirname(__DIR__) . '/assets/img/gallery/hanging-the-wreath.jpg';
 $owner_image = is_file($owner_image_file) ? 'assets/img/gallery/hanging-the-wreath.jpg' : '';
-$owner_image_alt = 'Steven hanging a holiday wreath';
+$owner_image_alt = 'Steve hanging a holiday wreath';

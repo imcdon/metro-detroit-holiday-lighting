@@ -30,16 +30,17 @@ function mdhl_schema_local_business(): array
             ['@type' => 'AdministrativeArea', 'name' => 'Oakland County, Michigan'],
             ['@type' => 'AdministrativeArea', 'name' => 'Wayne County, Michigan'],
             ['@type' => 'AdministrativeArea', 'name' => 'Macomb County, Michigan'],
+            ['@type' => 'AdministrativeArea', 'name' => 'Genesee County, Michigan'],
             ...array_map(static fn ($name) => ['@type' => 'City', 'name' => $name], $cities),
         ],
         'knowsAbout' => [
             'Holiday lighting installation',
-            'Christmas light design',
+            'Holiday light design',
             'Commercial holiday lighting',
             'HOA holiday lighting',
             'Wreath and garland installation',
             'Branch wrap tree lights',
-            'High roof christmas light installation',
+            'High roof holiday light installation',
         ],
     ];
 }
@@ -115,6 +116,7 @@ function mdhl_schema_service(string $name, string $description, string $url): ar
             ['@type' => 'AdministrativeArea', 'name' => 'Oakland County, Michigan'],
             ['@type' => 'AdministrativeArea', 'name' => 'Wayne County, Michigan'],
             ['@type' => 'AdministrativeArea', 'name' => 'Macomb County, Michigan'],
+            ['@type' => 'AdministrativeArea', 'name' => 'Genesee County, Michigan'],
         ],
     ];
 }

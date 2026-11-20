@@ -21,7 +21,7 @@ function mdhl_cities(): array
             'name' => 'Birmingham',
             'county' => 'Oakland',
             'nearby' => ['bloomfield-hills', 'troy', 'royal-oak', 'southfield'],
-            'intro' => 'Birmingham homeowners and storefronts want clean rooflines and tasteful accents that fit the village streetscape — not a tangled DIY project in December. Steven designs and installs full-season holiday lighting for Birmingham homes, businesses, and HOA entrances, then returns for mid-season fixes, take-down, and storage.',
+            'intro' => 'Birmingham homeowners and storefronts want clean rooflines and tasteful accents that fit the village streetscape — not a tangled DIY project in December. Steve designs and installs full-season holiday lighting for Birmingham homes, businesses, and HOA entrances, then returns for mid-season fixes, take-down, and storage.',
             'gallery_match' => ['/^residential-/i', '/wreath/i'],
         ],
         [
@@ -37,7 +37,7 @@ function mdhl_cities(): array
             'name' => 'Troy',
             'county' => 'Oakland',
             'nearby' => ['birmingham', 'rochester-hills', 'sterling-heights', 'royal-oak'],
-            'intro' => 'Troy is one of Metro Detroit’s busiest holiday-lighting corridors — homes, offices, and retail all competing for attention after dark. Steven maps a custom plan from your photos, installs commercial-grade lighting, and stays available if a strand fails mid-season.',
+            'intro' => 'Troy is one of Metro Detroit’s busiest holiday-lighting corridors — homes, offices, and retail all competing for attention after dark. Steve maps a custom plan from your photos, installs commercial-grade lighting, and stays available if a strand fails mid-season.',
             'gallery_match' => ['/^residential-/i', '/^commercial-/i'],
         ],
         [
@@ -53,7 +53,7 @@ function mdhl_cities(): array
             'name' => 'Rochester',
             'county' => 'Oakland',
             'nearby' => ['rochester-hills', 'auburn-hills', 'lake-orion', 'troy'],
-            'intro' => 'Downtown Rochester and nearby streets shine for the holidays — your home or storefront can match that energy without the ladder work. Steven installs and maintains seasonal displays across Rochester, then takes everything down after the New Year.',
+            'intro' => 'Downtown Rochester and nearby streets shine for the holidays — your home or storefront can match that energy without the ladder work. Steve installs and maintains seasonal displays across Rochester, then takes everything down after the New Year.',
             'gallery_match' => ['/^residential-/i', '/wreath/i'],
         ],
         [
@@ -61,7 +61,7 @@ function mdhl_cities(): array
             'name' => 'Royal Oak',
             'county' => 'Oakland',
             'nearby' => ['birmingham', 'ferndale', 'troy', 'southfield'],
-            'intro' => 'Royal Oak homes and Main Street businesses need displays that look sharp from the sidewalk and hold up through Michigan weather. Owner-operated holiday lighting from Steven covers rooflines, wreaths, trees, and storefront accents with mid-season support included.',
+            'intro' => 'Royal Oak homes and Main Street businesses need displays that look sharp from the sidewalk and hold up through Michigan weather. Owner-operated holiday lighting from Steve covers rooflines, wreaths, trees, and storefront accents with mid-season support included.',
             'gallery_match' => ['/^residential-/i', '/^commercial-/i', '/wreath/i'],
         ],
         [
@@ -132,7 +132,7 @@ function mdhl_cities(): array
             'name' => 'Livonia',
             'county' => 'Wayne',
             'nearby' => ['farmington-hills', 'plymouth', 'westland', 'northville'],
-            'intro' => 'Livonia families and businesses book holiday lighting when they want a polished curb appeal without weekends on the roof. Steven provides design, install, mid-season care, and take-down across Livonia — text photos for a custom quote.',
+            'intro' => 'Livonia families and businesses book holiday lighting when they want a polished curb appeal without weekends on the roof. Steve provides design, install, mid-season care, and take-down across Livonia — text photos for a custom quote.',
             'gallery_match' => ['/^residential-/i', '/tree/i'],
         ],
         [
@@ -185,7 +185,7 @@ function mdhl_cities(): array
             'name' => 'Sterling Heights',
             'county' => 'Macomb',
             'nearby' => ['warren', 'troy', 'clinton-township', 'shelby-township'],
-            'intro' => 'Sterling Heights homes and commercial corridors need reliable seasonal lighting that survives wind, ice, and busy parking lots. Steven designs and installs residential and business displays across Sterling Heights, with mid-season fixes and labeled off-season storage.',
+            'intro' => 'Sterling Heights homes and commercial corridors need reliable seasonal lighting that survives wind, ice, and busy parking lots. Steve designs and installs residential and business displays across Sterling Heights, with mid-season fixes and labeled off-season storage.',
             'gallery_match' => ['/^residential-/i', '/^commercial-/i'],
         ],
         [
@@ -217,6 +217,61 @@ function mdhl_cities(): array
             'name' => 'Macomb Township',
             'county' => 'Macomb',
             'nearby' => ['clinton-township', 'shelby-township', 'sterling-heights', 'st-clair-shores'],
+        ],
+        // Genesee County
+        [
+            'slug' => 'grand-blanc',
+            'name' => 'Grand Blanc',
+            'county' => 'Genesee',
+            'nearby' => ['flint', 'davison', 'fenton', 'burton'],
+            'intro' => 'Grand Blanc homes and businesses want polished holiday lighting without chasing subcontractors mid-season. Steve designs full-season displays for rooflines, trees, and entrances, then handles maintenance, take-down, and storage.',
+            'gallery_match' => ['/^residential-/i', '/wreath/i'],
+        ],
+        [
+            'slug' => 'fenton',
+            'name' => 'Fenton',
+            'county' => 'Genesee',
+            'nearby' => ['grand-blanc', 'flushing', 'goodrich', 'waterford'],
+            'intro' => 'Fenton lake-country properties mix tall peaks, mature trees, and busy Main Street storefronts. Owner-operated holiday lighting from Steve covers residential and commercial installs with mid-season support included.',
+            'gallery_match' => ['/^residential-/i', '/tree/i'],
+        ],
+        [
+            'slug' => 'flint',
+            'name' => 'Flint',
+            'county' => 'Genesee',
+            'nearby' => ['burton', 'grand-blanc', 'flushing', 'davison'],
+            'intro' => 'Flint homeowners and businesses book holiday lighting when they want dependable installs and one phone number for repairs. Steve quotes from your photos, installs commercial-grade lighting, and returns for take-down and labeled storage.',
+            'gallery_match' => ['/^residential-/i', '/^commercial-/i'],
+        ],
+        [
+            'slug' => 'davison',
+            'name' => 'Davison',
+            'county' => 'Genesee',
+            'nearby' => ['grand-blanc', 'flint', 'burton', 'goodrich'],
+        ],
+        [
+            'slug' => 'burton',
+            'name' => 'Burton',
+            'county' => 'Genesee',
+            'nearby' => ['flint', 'grand-blanc', 'davison', 'flushing'],
+        ],
+        [
+            'slug' => 'flushing',
+            'name' => 'Flushing',
+            'county' => 'Genesee',
+            'nearby' => ['flint', 'fenton', 'swartz-creek', 'burton'],
+        ],
+        [
+            'slug' => 'swartz-creek',
+            'name' => 'Swartz Creek',
+            'county' => 'Genesee',
+            'nearby' => ['flint', 'flushing', 'fenton', 'grand-blanc'],
+        ],
+        [
+            'slug' => 'goodrich',
+            'name' => 'Goodrich',
+            'county' => 'Genesee',
+            'nearby' => ['davison', 'fenton', 'grand-blanc', 'flushing'],
         ],
     ];
 }

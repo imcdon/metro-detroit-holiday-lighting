@@ -1,18 +1,18 @@
 # MDHL — client inputs (Phase 1 blockers)
 
-Steven / Ian: fill these before publishing testimonials, dollar ranges, or named client claims beyond what is already on the Path A site.
+Steve / Ian: fill these before publishing testimonials, dollar ranges, or named client claims beyond what is already on the Path A site.
 
-## Decisions applied on the site today (no Steven reply yet)
+## Decisions applied on the site today (no Steve reply yet)
 
 | Item | Decision until you change it | Where |
 |------|------------------------------|--------|
 | Price framing | **Custom quote only** — no dollar band on the site | FAQ in `includes/config.php` |
 | Light ownership / storage | Company provides the seasonal display materials; install, mid-season care, take-down, and **off-season storage** are included | FAQ + process steps |
-| October promo | **None** advertised until Steven confirms a real offer | — |
+| October promo | **None** advertised until Steve confirms a real offer | — |
 | Testimonials | **Empty** — homepage section stays hidden | `$testimonials` in `includes/config.php` |
 | Named commercial captions | Scope-only copy; Soaring Eagle already used in hero alt; Ford House / dealership filenames used as **photo labels**, not endorsement quotes | Landing pages + gallery |
 
-## Still need from Steven
+## Still need from Steve
 
 ### 1. Testimonials (3–5)
 
@@ -62,7 +62,7 @@ Check which properties may be named in captions or case blurbs:
 - [ ] GMC / dealership installs (filenames only)
 - [ ] Other: _______________________
 
-## After Steven replies
+## After Steve replies
 
 1. Update `$testimonials` and any pricing FAQ in `includes/config.php`.
 2. Mirror pricing FAQ on `homeowners` / `businesses` in `includes/landing-pages.php` if needed.
