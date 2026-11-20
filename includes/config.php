@@ -28,12 +28,18 @@ $mail_from = '';
 $trust_line = 'Professionally designed. Fully insured. Owner-operated.';
 
 $service_nav = mdhl_audience_nav();
-$specialty_nav = mdhl_specialty_nav();
+// Specialty landings stay live; set true when copy is ready for the Specialties menu.
+$show_specialty_nav = false;
+$specialty_nav = $show_specialty_nav ? mdhl_specialty_nav() : [];
 
 $nav_links = [
     'Home' => '',
     'Services' => 'homeowners/',
-    'Specialties' => 'wreaths/',
+];
+if ($show_specialty_nav) {
+    $nav_links['Specialties'] = 'wreaths/';
+}
+$nav_links += [
     'Gallery' => 'gallery/',
     'Service Areas' => 'service-areas/',
     'Contact' => 'contact/',
