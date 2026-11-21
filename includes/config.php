@@ -152,13 +152,13 @@ $gallery_images = mdhl_gallery_images();
 $scroll_frame_defs = [
     [
         'file' => 'mdhl-bloomfield-hills-7.jpg',
-        'caption' => 'Holiday décor that reads in daylight',
-        'alt' => 'Bloomfield Hills home with holiday décor during the day',
+        'caption' => 'Tree wraps and landscape lighting after dark',
+        'alt' => 'Bloomfield Hills home with green tree wraps and warm white branch lighting at night',
     ],
     [
         'file' => 'mdhl-bloomfield-hills-8.jpg',
-        'caption' => 'The same display after dark',
-        'alt' => 'Bloomfield Hills home with holiday lighting at night',
+        'caption' => 'Wreaths, steps, and trees lit for the season',
+        'alt' => 'Bloomfield Hills brick home with lighted wreaths, step lights, and wrapped trees at night',
     ],
 ];
 
@@ -170,7 +170,7 @@ foreach ($scroll_frame_defs as $frame) {
     }
     $scroll_frames[] = [
         'file' => $frame['file'],
-        'url' => url('assets/img/gallery/' . rawurlencode($frame['file'])),
+        'url' => mdhl_asset_url('assets/img/gallery/' . $frame['file']),
         'caption' => $frame['caption'],
         'alt' => $frame['alt'],
     ];
@@ -179,8 +179,8 @@ unset($scroll_frame_defs, $frame, $path);
 
 $hero_image_rel = 'assets/img/gallery/mdhl-bloomfield-hills-8.jpg';
 $hero_image_file = dirname(__DIR__) . '/' . $hero_image_rel;
-$hero_image = is_file($hero_image_file) ? url($hero_image_rel) : '';
-$hero_image_alt = 'Bloomfield Hills home with holiday lighting by Metro Detroit Holiday Lighting';
+$hero_image = is_file($hero_image_file) ? mdhl_asset_url($hero_image_rel) : '';
+$hero_image_alt = 'Bloomfield Hills brick home with wreaths, green tree wraps, and step lights at night';
 if ($hero_image === '' && $gallery_images !== []) {
     $hero_image = $gallery_images[0]['url'];
     $hero_image_alt = $gallery_images[0]['alt'];

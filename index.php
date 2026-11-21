@@ -54,7 +54,7 @@ require __DIR__ . '/includes/header.php';
                 <<?= $cardTag ?> class="audience-stage<?= empty($audience['has_image']) ? ' audience-stage--placeholder' : '' ?>"<?= $cardAttrs ?>>
                     <div class="audience-stage__media" aria-hidden="true">
                         <?php if (!empty($audience['has_image'])): ?>
-                            <img src="<?= htmlspecialchars(url($audience['image'])) ?>" alt="" width="1200" height="700" loading="lazy" decoding="async">
+                            <img src="<?= htmlspecialchars(mdhl_asset_url((string) $audience['image'])) ?>" alt="" width="1200" height="700" loading="lazy" decoding="async">
                         <?php endif; ?>
                     </div>
                     <div class="audience-stage__shade" aria-hidden="true"></div>
@@ -98,7 +98,7 @@ require __DIR__ . '/includes/header.php';
         <div class="scroll-stage__shade" aria-hidden="true"></div>
         <div class="scroll-stage__ui">
             <div class="scroll-stage__ui-inner">
-                <p class="scroll-stage__kicker">Decorations for Day and Night</p>
+                <p class="scroll-stage__kicker">Decorations that shine at night</p>
                 <p class="scroll-stage__caption" data-scroll-caption><?= htmlspecialchars($scroll_frames[0]['caption']) ?></p>
                 <div class="scroll-stage__dots" role="presentation">
                     <?php foreach ($scroll_frames as $i => $_frame): ?>

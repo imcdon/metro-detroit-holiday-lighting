@@ -32,7 +32,7 @@ $body_class = 'page-landing page-landing--' . $landing_slug;
 
 $hero_rel = (string) ($landing['hero_image'] ?? '');
 $hero_file = $hero_rel !== '' ? dirname(__DIR__) . '/' . $hero_rel : '';
-$landing_hero = ($hero_file !== '' && is_file($hero_file)) ? url($hero_rel) : '';
+$landing_hero = ($hero_file !== '' && is_file($hero_file)) ? mdhl_asset_url($hero_rel) : '';
 $landing_hero_alt = (string) ($landing['hero_alt'] ?? $landing['nav_label']);
 if ($landing_hero !== '') {
     $og_image = absolute_url(ltrim($hero_rel, '/'));
@@ -91,7 +91,7 @@ require __DIR__ . '/header.php';
     <?php
     $sectionImageRel = (string) ($section['image'] ?? '');
     $sectionImageFile = $sectionImageRel !== '' ? dirname(__DIR__) . '/' . $sectionImageRel : '';
-    $sectionImageUrl = ($sectionImageFile !== '' && is_file($sectionImageFile)) ? url($sectionImageRel) : '';
+    $sectionImageUrl = ($sectionImageFile !== '' && is_file($sectionImageFile)) ? mdhl_asset_url($sectionImageRel) : '';
     $sectionImageAlt = (string) ($section['image_alt'] ?? $section['h2']);
     $hasPanelImage = $sectionImageUrl !== '';
     $sectionDims = $hasPanelImage ? mdhl_image_dimensions_from_rel($sectionImageRel) : ['width' => 0, 'height' => 0];

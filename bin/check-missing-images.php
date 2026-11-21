@@ -39,7 +39,9 @@ foreach ($scroll_frames as $frame) {
     $check('assets/img/gallery/' . $frame['file']);
 }
 
-$check('assets/img/gallery/mdhl-bloomfield-hills-8.jpg');
+foreach (['mdhl-bloomfield-hills-7.jpg', 'mdhl-bloomfield-hills-8.jpg', 'mdhl-bloomfield-hills-9.jpg', 'mdhl-bloomfield-hills-11.jpg'] as $bh) {
+    $check('assets/img/gallery/' . $bh);
+}
 $check('assets/img/gallery/hanging-the-wreath.jpg');
 $check('assets/img/logo-new.png');
 $check('assets/img/favicon.png');

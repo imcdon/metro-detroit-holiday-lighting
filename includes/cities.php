@@ -10,7 +10,7 @@ declare(strict_types=1);
  * - intro: unique 2–3 sentence lead (priority SEO cities)
  * - gallery_match: PCRE patterns for a small photo strip on the city page
  *
- * @return list<array{slug:string,name:string,county:string,nearby:list<string>,intro?:string,gallery_match?:list<string>}>
+ * @return list<array{slug:string,name:string,county:string,nearby:list<string>,intro?:string,gallery_match?:list<string>,gallery_files?:list<string>}>
  */
 function mdhl_cities(): array
 {
@@ -30,7 +30,12 @@ function mdhl_cities(): array
             'county' => 'Oakland',
             'nearby' => ['birmingham', 'west-bloomfield', 'troy', 'pontiac'],
             'intro' => 'Bloomfield Hills properties often mean taller peaks, longer gutters, and landscaping that deserves careful tree wraps. Metro Detroit Holiday Lighting plans displays around the architecture — owner-operated and fully insured — so estates and family homes look finished from the curb without anyone on a ladder.',
-            'gallery_match' => ['/^residential-/i', '/roof/i', '/rood/i', '/mdhl-bloomfield-hills/i'],
+            'gallery_files' => [
+                'mdhl-bloomfield-hills-9.jpg',
+                'mdhl-bloomfield-hills-7.jpg',
+                'mdhl-bloomfield-hills-8.jpg',
+                'mdhl-bloomfield-hills-11.jpg',
+            ],
         ],
         [
             'slug' => 'troy',

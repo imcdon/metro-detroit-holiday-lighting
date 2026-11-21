@@ -36,7 +36,9 @@ if ($cityIntro === '') {
 }
 
 $cityGallery = [];
-if (!empty($city['gallery_match']) && is_array($city['gallery_match'])) {
+if (!empty($city['gallery_files']) && is_array($city['gallery_files'])) {
+    $cityGallery = mdhl_gallery_pick_files($city['gallery_files']);
+} elseif (!empty($city['gallery_match']) && is_array($city['gallery_match'])) {
     $cityGallery = mdhl_gallery_for_landing($city['gallery_match'], 4);
 }
 

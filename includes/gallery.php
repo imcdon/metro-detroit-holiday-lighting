@@ -2,6 +2,33 @@
 
 declare(strict_types=1);
 
+/** Web gallery basenames replaced by mdhl-bloomfield-hills-7/8/9/11 — hide from public index. */
+const MDHL_GALLERY_HIDDEN = [
+    'mdhl-bloomfield-hills-1.jpg',
+    'mdhl-bloomfield-hills-2.jpg',
+    'mdhl-bloomfield-hills-3.jpg',
+    'mdhl-bloomfield-hills-4.jpg',
+];
+
+/**
+ * Project-relative asset URL with cache-busting filemtime (gallery, img, etc.).
+ */
+function mdhl_asset_url(string $rel): string
+{
+    $rel = ltrim(str_replace('\\', '/', $rel), '/');
+    if ($rel === '') {
+        return url();
+    }
+    $base = url($rel);
+    $file = dirname(__DIR__) . '/' . $rel;
+    if (!is_file($file)) {
+        return $base;
+    }
+    $v = (int) filemtime($file);
+
+    return $base . (str_contains($base, '?') ? '&' : '?') . 'v=' . $v;
+}
+
 /**
  * Pixel dimensions for a project-relative image path (e.g. assets/img/gallery/foo.jpg).
  *
@@ -48,6 +75,9 @@ function mdhl_gallery_images(): array
         if (!preg_match('/\.(jpe?g|png|webp)$/i', $file)) {
             continue;
         }
+        if (in_array($file, MDHL_GALLERY_HIDDEN, true)) {
+            continue;
+        }
         $base = pathinfo($file, PATHINFO_FILENAME);
         $label = ucwords(str_replace(['-', '_'], ' ', $base));
         $fullPath = $dir . DIRECTORY_SEPARATOR . $file;
@@ -68,7 +98,7 @@ function mdhl_gallery_images(): array
         }
         $out[] = [
             'file' => $file,
-            'url' => url('assets/img/gallery/' . rawurlencode($file)),
+            'url' => mdhl_asset_url('assets/img/gallery/' . $file),
             'alt' => 'Holiday lighting by Metro Detroit Holiday Lighting — ' . $label,
             'width' => $width,
             'height' => $height,
