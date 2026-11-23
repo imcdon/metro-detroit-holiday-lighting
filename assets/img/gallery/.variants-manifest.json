@@ -1,0 +1,1892 @@
+{
+  "brand-trailer-driveway.jpg": {
+    "height": 4016,
+    "jpeg": "brand-trailer-driveway.jpg",
+    "variants": [
+      {
+        "file": "brand-trailer-driveway-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "brand-trailer-driveway-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "brand-trailer-driveway-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "brand-trailer-driveway-6016w.webp",
+        "format": "webp",
+        "height": 4016,
+        "width": 6016
+      }
+    ],
+    "width": 6016
+  },
+  "brand-trailer-side.jpg": {
+    "height": 4016,
+    "jpeg": "brand-trailer-side.jpg",
+    "variants": [
+      {
+        "file": "brand-trailer-side-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "brand-trailer-side-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "brand-trailer-side-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "brand-trailer-side-6016w.webp",
+        "format": "webp",
+        "height": 4016,
+        "width": 6016
+      }
+    ],
+    "width": 6016
+  },
+  "commercial-01-blue-roof-gmc.jpg": {
+    "height": 1200,
+    "jpeg": "commercial-01-blue-roof-gmc.jpg",
+    "variants": [
+      {
+        "file": "commercial-01-blue-roof-gmc-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "commercial-01-blue-roof-gmc-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "commercial-01-blue-roof-gmc-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "commercial-02-blue-tree.jpg": {
+    "height": 1600,
+    "jpeg": "commercial-02-blue-tree.jpg",
+    "variants": [
+      {
+        "file": "commercial-02-blue-tree-800w.webp",
+        "format": "webp",
+        "height": 1067,
+        "width": 800
+      },
+      {
+        "file": "commercial-02-blue-tree-1200w.webp",
+        "format": "webp",
+        "height": 1600,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "commercial-03-building-entrance-wreath.jpg": {
+    "height": 1600,
+    "jpeg": "commercial-03-building-entrance-wreath.jpg",
+    "variants": [
+      {
+        "file": "commercial-03-building-entrance-wreath-800w.webp",
+        "format": "webp",
+        "height": 1067,
+        "width": 800
+      },
+      {
+        "file": "commercial-03-building-entrance-wreath-1200w.webp",
+        "format": "webp",
+        "height": 1600,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "commercial-04-daytime-garland-wreath.jpg": {
+    "height": 1200,
+    "jpeg": "commercial-04-daytime-garland-wreath.jpg",
+    "variants": [
+      {
+        "file": "commercial-04-daytime-garland-wreath-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "commercial-04-daytime-garland-wreath-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "commercial-04-daytime-garland-wreath-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "commercial-05-dealership-trees.jpg": {
+    "height": 1200,
+    "jpeg": "commercial-05-dealership-trees.jpg",
+    "variants": [
+      {
+        "file": "commercial-05-dealership-trees-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "commercial-05-dealership-trees-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "commercial-05-dealership-trees-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "commercial-06-ford-house.jpg": {
+    "height": 1200,
+    "jpeg": "commercial-06-ford-house.jpg",
+    "variants": [
+      {
+        "file": "commercial-06-ford-house-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "commercial-06-ford-house-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "commercial-06-ford-house-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "commercial-07-how-entrance.jpg": {
+    "height": 1200,
+    "jpeg": "commercial-07-how-entrance.jpg",
+    "variants": [
+      {
+        "file": "commercial-07-how-entrance-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "commercial-07-how-entrance-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "commercial-07-how-entrance-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "commercial-08-lions-tree.jpg": {
+    "height": 1600,
+    "jpeg": "commercial-08-lions-tree.jpg",
+    "variants": [
+      {
+        "file": "commercial-08-lions-tree-800w.webp",
+        "format": "webp",
+        "height": 1067,
+        "width": 800
+      },
+      {
+        "file": "commercial-08-lions-tree-1200w.webp",
+        "format": "webp",
+        "height": 1600,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "commercial-09-soaring-eagle-entrance.jpg": {
+    "height": 1200,
+    "jpeg": "commercial-09-soaring-eagle-entrance.jpg",
+    "variants": [
+      {
+        "file": "commercial-09-soaring-eagle-entrance-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "commercial-09-soaring-eagle-entrance-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "commercial-09-soaring-eagle-entrance-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "hanging-the-wreath.jpg": {
+    "height": 1280,
+    "jpeg": "hanging-the-wreath.jpg",
+    "variants": [
+      {
+        "file": "hanging-the-wreath-800w.webp",
+        "format": "webp",
+        "height": 1199,
+        "width": 800
+      },
+      {
+        "file": "hanging-the-wreath-854w.webp",
+        "format": "webp",
+        "height": 1280,
+        "width": 854
+      }
+    ],
+    "width": 854
+  },
+  "high-roof-01-gutter-install.jpg": {
+    "height": 4016,
+    "jpeg": "high-roof-01-gutter-install.jpg",
+    "variants": [
+      {
+        "file": "high-roof-01-gutter-install-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "high-roof-01-gutter-install-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "high-roof-01-gutter-install-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "high-roof-01-gutter-install-6016w.webp",
+        "format": "webp",
+        "height": 4016,
+        "width": 6016
+      }
+    ],
+    "width": 6016
+  },
+  "high-roof-02-gutter-corner.jpg": {
+    "height": 4016,
+    "jpeg": "high-roof-02-gutter-corner.jpg",
+    "variants": [
+      {
+        "file": "high-roof-02-gutter-corner-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "high-roof-02-gutter-corner-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "high-roof-02-gutter-corner-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "high-roof-02-gutter-corner-6016w.webp",
+        "format": "webp",
+        "height": 4016,
+        "width": 6016
+      }
+    ],
+    "width": 6016
+  },
+  "high-roof-03-ladder-ascent.jpg": {
+    "height": 6016,
+    "jpeg": "high-roof-03-ladder-ascent.jpg",
+    "variants": [
+      {
+        "file": "high-roof-03-ladder-ascent-800w.webp",
+        "format": "webp",
+        "height": 1198,
+        "width": 800
+      },
+      {
+        "file": "high-roof-03-ladder-ascent-1280w.webp",
+        "format": "webp",
+        "height": 1917,
+        "width": 1280
+      },
+      {
+        "file": "high-roof-03-ladder-ascent-1600w.webp",
+        "format": "webp",
+        "height": 2397,
+        "width": 1600
+      },
+      {
+        "file": "high-roof-03-ladder-ascent-4016w.webp",
+        "format": "webp",
+        "height": 6016,
+        "width": 4016
+      }
+    ],
+    "width": 4016
+  },
+  "high-roof-04-gable-ladder.jpg": {
+    "height": 6016,
+    "jpeg": "high-roof-04-gable-ladder.jpg",
+    "variants": [
+      {
+        "file": "high-roof-04-gable-ladder-800w.webp",
+        "format": "webp",
+        "height": 1198,
+        "width": 800
+      },
+      {
+        "file": "high-roof-04-gable-ladder-1280w.webp",
+        "format": "webp",
+        "height": 1917,
+        "width": 1280
+      },
+      {
+        "file": "high-roof-04-gable-ladder-1600w.webp",
+        "format": "webp",
+        "height": 2397,
+        "width": 1600
+      },
+      {
+        "file": "high-roof-04-gable-ladder-4016w.webp",
+        "format": "webp",
+        "height": 6016,
+        "width": 4016
+      }
+    ],
+    "width": 4016
+  },
+  "high-roof-05-peak-lights-wreath.jpg": {
+    "height": 6016,
+    "jpeg": "high-roof-05-peak-lights-wreath.jpg",
+    "variants": [
+      {
+        "file": "high-roof-05-peak-lights-wreath-800w.webp",
+        "format": "webp",
+        "height": 1198,
+        "width": 800
+      },
+      {
+        "file": "high-roof-05-peak-lights-wreath-1280w.webp",
+        "format": "webp",
+        "height": 1917,
+        "width": 1280
+      },
+      {
+        "file": "high-roof-05-peak-lights-wreath-1600w.webp",
+        "format": "webp",
+        "height": 2397,
+        "width": 1600
+      },
+      {
+        "file": "high-roof-05-peak-lights-wreath-4016w.webp",
+        "format": "webp",
+        "height": 6016,
+        "width": 4016
+      }
+    ],
+    "width": 4016
+  },
+  "mdhl-bloomfield-hills-1.jpg": {
+    "height": 1602,
+    "jpeg": "mdhl-bloomfield-hills-1.jpg",
+    "variants": [
+      {
+        "file": "mdhl-bloomfield-hills-1-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-bloomfield-hills-1-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-bloomfield-hills-1-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-bloomfield-hills-1-2400w.webp",
+        "format": "webp",
+        "height": 1602,
+        "width": 2400
+      }
+    ],
+    "width": 2400
+  },
+  "mdhl-bloomfield-hills-10.jpg": {
+    "height": 1335,
+    "jpeg": "mdhl-bloomfield-hills-10.jpg",
+    "variants": [
+      {
+        "file": "mdhl-bloomfield-hills-10-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-bloomfield-hills-10-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-bloomfield-hills-10-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-bloomfield-hills-10-2000w.webp",
+        "format": "webp",
+        "height": 1335,
+        "width": 2000
+      }
+    ],
+    "width": 2000
+  },
+  "mdhl-bloomfield-hills-11.jpg": {
+    "height": 2400,
+    "jpeg": "mdhl-bloomfield-hills-11.jpg",
+    "variants": [
+      {
+        "file": "mdhl-bloomfield-hills-11-800w.webp",
+        "format": "webp",
+        "height": 1199,
+        "width": 800
+      },
+      {
+        "file": "mdhl-bloomfield-hills-11-1280w.webp",
+        "format": "webp",
+        "height": 1918,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-bloomfield-hills-11-1600w.webp",
+        "format": "webp",
+        "height": 2397,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-bloomfield-hills-11-1602w.webp",
+        "format": "webp",
+        "height": 2400,
+        "width": 1602
+      }
+    ],
+    "width": 1602
+  },
+  "mdhl-bloomfield-hills-12.jpg": {
+    "height": 1602,
+    "jpeg": "mdhl-bloomfield-hills-12.jpg",
+    "variants": [
+      {
+        "file": "mdhl-bloomfield-hills-12-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-bloomfield-hills-12-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-bloomfield-hills-12-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-bloomfield-hills-12-2400w.webp",
+        "format": "webp",
+        "height": 1602,
+        "width": 2400
+      }
+    ],
+    "width": 2400
+  },
+  "mdhl-bloomfield-hills-13.jpg": {
+    "height": 2000,
+    "jpeg": "mdhl-bloomfield-hills-13.jpg",
+    "variants": [
+      {
+        "file": "mdhl-bloomfield-hills-13-800w.webp",
+        "format": "webp",
+        "height": 1199,
+        "width": 800
+      },
+      {
+        "file": "mdhl-bloomfield-hills-13-1280w.webp",
+        "format": "webp",
+        "height": 1918,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-bloomfield-hills-13-1335w.webp",
+        "format": "webp",
+        "height": 2000,
+        "width": 1335
+      }
+    ],
+    "width": 1335
+  },
+  "mdhl-bloomfield-hills-2.jpg": {
+    "height": 2000,
+    "jpeg": "mdhl-bloomfield-hills-2.jpg",
+    "variants": [
+      {
+        "file": "mdhl-bloomfield-hills-2-800w.webp",
+        "format": "webp",
+        "height": 1199,
+        "width": 800
+      },
+      {
+        "file": "mdhl-bloomfield-hills-2-1280w.webp",
+        "format": "webp",
+        "height": 1918,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-bloomfield-hills-2-1335w.webp",
+        "format": "webp",
+        "height": 2000,
+        "width": 1335
+      }
+    ],
+    "width": 1335
+  },
+  "mdhl-bloomfield-hills-3.jpg": {
+    "height": 2000,
+    "jpeg": "mdhl-bloomfield-hills-3.jpg",
+    "variants": [
+      {
+        "file": "mdhl-bloomfield-hills-3-800w.webp",
+        "format": "webp",
+        "height": 1199,
+        "width": 800
+      },
+      {
+        "file": "mdhl-bloomfield-hills-3-1280w.webp",
+        "format": "webp",
+        "height": 1918,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-bloomfield-hills-3-1335w.webp",
+        "format": "webp",
+        "height": 2000,
+        "width": 1335
+      }
+    ],
+    "width": 1335
+  },
+  "mdhl-bloomfield-hills-4.jpg": {
+    "height": 1602,
+    "jpeg": "mdhl-bloomfield-hills-4.jpg",
+    "variants": [
+      {
+        "file": "mdhl-bloomfield-hills-4-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-bloomfield-hills-4-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-bloomfield-hills-4-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-bloomfield-hills-4-2400w.webp",
+        "format": "webp",
+        "height": 1602,
+        "width": 2400
+      }
+    ],
+    "width": 2400
+  },
+  "mdhl-bloomfield-hills-5.jpg": {
+    "height": 1602,
+    "jpeg": "mdhl-bloomfield-hills-5.jpg",
+    "variants": [
+      {
+        "file": "mdhl-bloomfield-hills-5-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-bloomfield-hills-5-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-bloomfield-hills-5-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-bloomfield-hills-5-2400w.webp",
+        "format": "webp",
+        "height": 1602,
+        "width": 2400
+      }
+    ],
+    "width": 2400
+  },
+  "mdhl-bloomfield-hills-6.jpg": {
+    "height": 1602,
+    "jpeg": "mdhl-bloomfield-hills-6.jpg",
+    "variants": [
+      {
+        "file": "mdhl-bloomfield-hills-6-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-bloomfield-hills-6-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-bloomfield-hills-6-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-bloomfield-hills-6-2400w.webp",
+        "format": "webp",
+        "height": 1602,
+        "width": 2400
+      }
+    ],
+    "width": 2400
+  },
+  "mdhl-bloomfield-hills-7.jpg": {
+    "height": 1602,
+    "jpeg": "mdhl-bloomfield-hills-7.jpg",
+    "variants": [
+      {
+        "file": "mdhl-bloomfield-hills-7-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-bloomfield-hills-7-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-bloomfield-hills-7-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-bloomfield-hills-7-2400w.webp",
+        "format": "webp",
+        "height": 1602,
+        "width": 2400
+      }
+    ],
+    "width": 2400
+  },
+  "mdhl-bloomfield-hills-8.jpg": {
+    "height": 1602,
+    "jpeg": "mdhl-bloomfield-hills-8.jpg",
+    "variants": [
+      {
+        "file": "mdhl-bloomfield-hills-8-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-bloomfield-hills-8-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-bloomfield-hills-8-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-bloomfield-hills-8-2400w.webp",
+        "format": "webp",
+        "height": 1602,
+        "width": 2400
+      }
+    ],
+    "width": 2400
+  },
+  "mdhl-bloomfield-hills-9.jpg": {
+    "height": 1602,
+    "jpeg": "mdhl-bloomfield-hills-9.jpg",
+    "variants": [
+      {
+        "file": "mdhl-bloomfield-hills-9-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-bloomfield-hills-9-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-bloomfield-hills-9-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-bloomfield-hills-9-2400w.webp",
+        "format": "webp",
+        "height": 1602,
+        "width": 2400
+      }
+    ],
+    "width": 2400
+  },
+  "mdhl-ranch-estates-1.jpg": {
+    "height": 1602,
+    "jpeg": "mdhl-ranch-estates-1.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-1-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-1-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-1-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-ranch-estates-1-2400w.webp",
+        "format": "webp",
+        "height": 1602,
+        "width": 2400
+      }
+    ],
+    "width": 2400
+  },
+  "mdhl-ranch-estates-10.jpg": {
+    "height": 2000,
+    "jpeg": "mdhl-ranch-estates-10.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-10-800w.webp",
+        "format": "webp",
+        "height": 1199,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-10-1280w.webp",
+        "format": "webp",
+        "height": 1918,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-10-1335w.webp",
+        "format": "webp",
+        "height": 2000,
+        "width": 1335
+      }
+    ],
+    "width": 1335
+  },
+  "mdhl-ranch-estates-11.jpg": {
+    "height": 1602,
+    "jpeg": "mdhl-ranch-estates-11.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-11-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-11-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-11-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-ranch-estates-11-2400w.webp",
+        "format": "webp",
+        "height": 1602,
+        "width": 2400
+      }
+    ],
+    "width": 2400
+  },
+  "mdhl-ranch-estates-12.jpg": {
+    "height": 2000,
+    "jpeg": "mdhl-ranch-estates-12.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-12-800w.webp",
+        "format": "webp",
+        "height": 1199,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-12-1280w.webp",
+        "format": "webp",
+        "height": 1918,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-12-1335w.webp",
+        "format": "webp",
+        "height": 2000,
+        "width": 1335
+      }
+    ],
+    "width": 1335
+  },
+  "mdhl-ranch-estates-13.jpg": {
+    "height": 2000,
+    "jpeg": "mdhl-ranch-estates-13.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-13-800w.webp",
+        "format": "webp",
+        "height": 1199,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-13-1280w.webp",
+        "format": "webp",
+        "height": 1918,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-13-1335w.webp",
+        "format": "webp",
+        "height": 2000,
+        "width": 1335
+      }
+    ],
+    "width": 1335
+  },
+  "mdhl-ranch-estates-14.jpg": {
+    "height": 2400,
+    "jpeg": "mdhl-ranch-estates-14.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-14-800w.webp",
+        "format": "webp",
+        "height": 1199,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-14-1280w.webp",
+        "format": "webp",
+        "height": 1918,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-14-1600w.webp",
+        "format": "webp",
+        "height": 2397,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-ranch-estates-14-1602w.webp",
+        "format": "webp",
+        "height": 2400,
+        "width": 1602
+      }
+    ],
+    "width": 1602
+  },
+  "mdhl-ranch-estates-15.jpg": {
+    "height": 2000,
+    "jpeg": "mdhl-ranch-estates-15.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-15-800w.webp",
+        "format": "webp",
+        "height": 1199,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-15-1280w.webp",
+        "format": "webp",
+        "height": 1918,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-15-1335w.webp",
+        "format": "webp",
+        "height": 2000,
+        "width": 1335
+      }
+    ],
+    "width": 1335
+  },
+  "mdhl-ranch-estates-2.jpg": {
+    "height": 2000,
+    "jpeg": "mdhl-ranch-estates-2.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-2-800w.webp",
+        "format": "webp",
+        "height": 1199,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-2-1280w.webp",
+        "format": "webp",
+        "height": 1918,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-2-1335w.webp",
+        "format": "webp",
+        "height": 2000,
+        "width": 1335
+      }
+    ],
+    "width": 1335
+  },
+  "mdhl-ranch-estates-3.jpg": {
+    "height": 2000,
+    "jpeg": "mdhl-ranch-estates-3.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-3-800w.webp",
+        "format": "webp",
+        "height": 1199,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-3-1280w.webp",
+        "format": "webp",
+        "height": 1918,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-3-1335w.webp",
+        "format": "webp",
+        "height": 2000,
+        "width": 1335
+      }
+    ],
+    "width": 1335
+  },
+  "mdhl-ranch-estates-4.jpg": {
+    "height": 2000,
+    "jpeg": "mdhl-ranch-estates-4.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-4-800w.webp",
+        "format": "webp",
+        "height": 1199,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-4-1280w.webp",
+        "format": "webp",
+        "height": 1918,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-4-1335w.webp",
+        "format": "webp",
+        "height": 2000,
+        "width": 1335
+      }
+    ],
+    "width": 1335
+  },
+  "mdhl-ranch-estates-5.jpg": {
+    "height": 1335,
+    "jpeg": "mdhl-ranch-estates-5.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-5-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-5-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-5-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-ranch-estates-5-2000w.webp",
+        "format": "webp",
+        "height": 1335,
+        "width": 2000
+      }
+    ],
+    "width": 2000
+  },
+  "mdhl-ranch-estates-6.jpg": {
+    "height": 1335,
+    "jpeg": "mdhl-ranch-estates-6.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-6-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-6-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-6-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-ranch-estates-6-2000w.webp",
+        "format": "webp",
+        "height": 1335,
+        "width": 2000
+      }
+    ],
+    "width": 2000
+  },
+  "mdhl-ranch-estates-7.jpg": {
+    "height": 1335,
+    "jpeg": "mdhl-ranch-estates-7.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-7-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-7-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-7-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-ranch-estates-7-2000w.webp",
+        "format": "webp",
+        "height": 1335,
+        "width": 2000
+      }
+    ],
+    "width": 2000
+  },
+  "mdhl-ranch-estates-8.jpg": {
+    "height": 1602,
+    "jpeg": "mdhl-ranch-estates-8.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-8-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-8-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-8-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-ranch-estates-8-2400w.webp",
+        "format": "webp",
+        "height": 1602,
+        "width": 2400
+      }
+    ],
+    "width": 2400
+  },
+  "mdhl-ranch-estates-9.jpg": {
+    "height": 1602,
+    "jpeg": "mdhl-ranch-estates-9.jpg",
+    "variants": [
+      {
+        "file": "mdhl-ranch-estates-9-800w.webp",
+        "format": "webp",
+        "height": 534,
+        "width": 800
+      },
+      {
+        "file": "mdhl-ranch-estates-9-1280w.webp",
+        "format": "webp",
+        "height": 854,
+        "width": 1280
+      },
+      {
+        "file": "mdhl-ranch-estates-9-1600w.webp",
+        "format": "webp",
+        "height": 1068,
+        "width": 1600
+      },
+      {
+        "file": "mdhl-ranch-estates-9-2400w.webp",
+        "format": "webp",
+        "height": 1602,
+        "width": 2400
+      }
+    ],
+    "width": 2400
+  },
+  "residential-01-birchwood-all-white-house-tree.jpg": {
+    "height": 1600,
+    "jpeg": "residential-01-birchwood-all-white-house-tree.jpg",
+    "variants": [
+      {
+        "file": "residential-01-birchwood-all-white-house-tree-800w.webp",
+        "format": "webp",
+        "height": 1067,
+        "width": 800
+      },
+      {
+        "file": "residential-01-birchwood-all-white-house-tree-1200w.webp",
+        "format": "webp",
+        "height": 1600,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "residential-02-birchwood-blue-tree.jpg": {
+    "height": 1600,
+    "jpeg": "residential-02-birchwood-blue-tree.jpg",
+    "variants": [
+      {
+        "file": "residential-02-birchwood-blue-tree-800w.webp",
+        "format": "webp",
+        "height": 1067,
+        "width": 800
+      },
+      {
+        "file": "residential-02-birchwood-blue-tree-1200w.webp",
+        "format": "webp",
+        "height": 1600,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "residential-03-birchwood-multicolor-tree.jpg": {
+    "height": 1600,
+    "jpeg": "residential-03-birchwood-multicolor-tree.jpg",
+    "variants": [
+      {
+        "file": "residential-03-birchwood-multicolor-tree-800w.webp",
+        "format": "webp",
+        "height": 1067,
+        "width": 800
+      },
+      {
+        "file": "residential-03-birchwood-multicolor-tree-1200w.webp",
+        "format": "webp",
+        "height": 1600,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "residential-04-birchwood-red-tree-only.jpg": {
+    "height": 1600,
+    "jpeg": "residential-04-birchwood-red-tree-only.jpg",
+    "variants": [
+      {
+        "file": "residential-04-birchwood-red-tree-only-800w.webp",
+        "format": "webp",
+        "height": 1067,
+        "width": 800
+      },
+      {
+        "file": "residential-04-birchwood-red-tree-only-1200w.webp",
+        "format": "webp",
+        "height": 1600,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "residential-05-birchwood-roof-red-tree.jpg": {
+    "height": 1200,
+    "jpeg": "residential-05-birchwood-roof-red-tree.jpg",
+    "variants": [
+      {
+        "file": "residential-05-birchwood-roof-red-tree-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "residential-05-birchwood-roof-red-tree-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "residential-05-birchwood-roof-red-tree-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "residential-06-birchwood-white-heavy-snow.jpg": {
+    "height": 1600,
+    "jpeg": "residential-06-birchwood-white-heavy-snow.jpg",
+    "variants": [
+      {
+        "file": "residential-06-birchwood-white-heavy-snow-800w.webp",
+        "format": "webp",
+        "height": 1067,
+        "width": 800
+      },
+      {
+        "file": "residential-06-birchwood-white-heavy-snow-1200w.webp",
+        "format": "webp",
+        "height": 1600,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "residential-07-birchwood-white-tree-snow.jpg": {
+    "height": 1600,
+    "jpeg": "residential-07-birchwood-white-tree-snow.jpg",
+    "variants": [
+      {
+        "file": "residential-07-birchwood-white-tree-snow-800w.webp",
+        "format": "webp",
+        "height": 1067,
+        "width": 800
+      },
+      {
+        "file": "residential-07-birchwood-white-tree-snow-1200w.webp",
+        "format": "webp",
+        "height": 1600,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "residential-08-clark-white-tree.jpg": {
+    "height": 1600,
+    "jpeg": "residential-08-clark-white-tree.jpg",
+    "variants": [
+      {
+        "file": "residential-08-clark-white-tree-800w.webp",
+        "format": "webp",
+        "height": 1067,
+        "width": 800
+      },
+      {
+        "file": "residential-08-clark-white-tree-1200w.webp",
+        "format": "webp",
+        "height": 1600,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "residential-09-daytime-roof-and-garland.jpg": {
+    "height": 1200,
+    "jpeg": "residential-09-daytime-roof-and-garland.jpg",
+    "variants": [
+      {
+        "file": "residential-09-daytime-roof-and-garland-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "residential-09-daytime-roof-and-garland-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "residential-09-daytime-roof-and-garland-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "residential-10-daytime-stake-lights-and-roof.jpg": {
+    "height": 1200,
+    "jpeg": "residential-10-daytime-stake-lights-and-roof.jpg",
+    "variants": [
+      {
+        "file": "residential-10-daytime-stake-lights-and-roof-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "residential-10-daytime-stake-lights-and-roof-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "residential-10-daytime-stake-lights-and-roof-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "residential-11-daytime-wreath-garland-planters.jpg": {
+    "height": 1200,
+    "jpeg": "residential-11-daytime-wreath-garland-planters.jpg",
+    "variants": [
+      {
+        "file": "residential-11-daytime-wreath-garland-planters-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "residential-11-daytime-wreath-garland-planters-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "residential-11-daytime-wreath-garland-planters-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "residential-12-daytime-wreaths.jpg": {
+    "height": 1200,
+    "jpeg": "residential-12-daytime-wreaths.jpg",
+    "variants": [
+      {
+        "file": "residential-12-daytime-wreaths-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "residential-12-daytime-wreaths-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "residential-12-daytime-wreaths-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "residential-13-red-trees.jpg": {
+    "height": 1200,
+    "jpeg": "residential-13-red-trees.jpg",
+    "variants": [
+      {
+        "file": "residential-13-red-trees-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "residential-13-red-trees-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "residential-13-red-trees-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "residential-14-rivard-blue-and-white.jpg": {
+    "height": 1200,
+    "jpeg": "residential-14-rivard-blue-and-white.jpg",
+    "variants": [
+      {
+        "file": "residential-14-rivard-blue-and-white-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "residential-14-rivard-blue-and-white-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "residential-14-rivard-blue-and-white-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "residential-15-rood-height-install.jpg": {
+    "height": 1200,
+    "jpeg": "residential-15-rood-height-install.jpg",
+    "variants": [
+      {
+        "file": "residential-15-rood-height-install-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "residential-15-rood-height-install-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "residential-15-rood-height-install-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "residential-16-small-house-roof-wreath-bush.jpg": {
+    "height": 1600,
+    "jpeg": "residential-16-small-house-roof-wreath-bush.jpg",
+    "variants": [
+      {
+        "file": "residential-16-small-house-roof-wreath-bush-800w.webp",
+        "format": "webp",
+        "height": 1067,
+        "width": 800
+      },
+      {
+        "file": "residential-16-small-house-roof-wreath-bush-1200w.webp",
+        "format": "webp",
+        "height": 1600,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "residential-17-snoozies-trees.jpg": {
+    "height": 1200,
+    "jpeg": "residential-17-snoozies-trees.jpg",
+    "variants": [
+      {
+        "file": "residential-17-snoozies-trees-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "residential-17-snoozies-trees-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "residential-17-snoozies-trees-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "residential-18-stake-lights-and-wreaths.jpg": {
+    "height": 738,
+    "jpeg": "residential-18-stake-lights-and-wreaths.jpg",
+    "variants": [
+      {
+        "file": "residential-18-stake-lights-and-wreaths-800w.webp",
+        "format": "webp",
+        "height": 369,
+        "width": 800
+      },
+      {
+        "file": "residential-18-stake-lights-and-wreaths-1280w.webp",
+        "format": "webp",
+        "height": 590,
+        "width": 1280
+      },
+      {
+        "file": "residential-18-stake-lights-and-wreaths-1600w.webp",
+        "format": "webp",
+        "height": 738,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "residential-19-white-bushes-and-roof.jpg": {
+    "height": 1600,
+    "jpeg": "residential-19-white-bushes-and-roof.jpg",
+    "variants": [
+      {
+        "file": "residential-19-white-bushes-and-roof-800w.webp",
+        "format": "webp",
+        "height": 1067,
+        "width": 800
+      },
+      {
+        "file": "residential-19-white-bushes-and-roof-1200w.webp",
+        "format": "webp",
+        "height": 1600,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "residential-20-white-house-roof-tree.jpg": {
+    "height": 738,
+    "jpeg": "residential-20-white-house-roof-tree.jpg",
+    "variants": [
+      {
+        "file": "residential-20-white-house-roof-tree-800w.webp",
+        "format": "webp",
+        "height": 369,
+        "width": 800
+      },
+      {
+        "file": "residential-20-white-house-roof-tree-1280w.webp",
+        "format": "webp",
+        "height": 590,
+        "width": 1280
+      },
+      {
+        "file": "residential-20-white-house-roof-tree-1600w.webp",
+        "format": "webp",
+        "height": 738,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "residential-21-white-roof-red-trees.jpg": {
+    "height": 1200,
+    "jpeg": "residential-21-white-roof-red-trees.jpg",
+    "variants": [
+      {
+        "file": "residential-21-white-roof-red-trees-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "residential-21-white-roof-red-trees-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "residential-21-white-roof-red-trees-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "residential-22-white-roof-wreath-red-tree.jpg": {
+    "height": 1200,
+    "jpeg": "residential-22-white-roof-wreath-red-tree.jpg",
+    "variants": [
+      {
+        "file": "residential-22-white-roof-wreath-red-tree-800w.webp",
+        "format": "webp",
+        "height": 600,
+        "width": 800
+      },
+      {
+        "file": "residential-22-white-roof-wreath-red-tree-1280w.webp",
+        "format": "webp",
+        "height": 960,
+        "width": 1280
+      },
+      {
+        "file": "residential-22-white-roof-wreath-red-tree-1600w.webp",
+        "format": "webp",
+        "height": 1200,
+        "width": 1600
+      }
+    ],
+    "width": 1600
+  },
+  "residential-blue-tree.jpg": {
+    "height": 1600,
+    "jpeg": "residential-blue-tree.jpg",
+    "variants": [
+      {
+        "file": "residential-blue-tree-800w.webp",
+        "format": "webp",
+        "height": 1067,
+        "width": 800
+      },
+      {
+        "file": "residential-blue-tree-1200w.webp",
+        "format": "webp",
+        "height": 1600,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "wreath-01-peak-install.jpg": {
+    "height": 6016,
+    "jpeg": "wreath-01-peak-install.jpg",
+    "variants": [
+      {
+        "file": "wreath-01-peak-install-800w.webp",
+        "format": "webp",
+        "height": 1198,
+        "width": 800
+      },
+      {
+        "file": "wreath-01-peak-install-1280w.webp",
+        "format": "webp",
+        "height": 1917,
+        "width": 1280
+      },
+      {
+        "file": "wreath-01-peak-install-1600w.webp",
+        "format": "webp",
+        "height": 2397,
+        "width": 1600
+      },
+      {
+        "file": "wreath-01-peak-install-4016w.webp",
+        "format": "webp",
+        "height": 6016,
+        "width": 4016
+      }
+    ],
+    "width": 4016
+  },
+  "wreath-02-ladder-hang.jpg": {
+    "height": 6016,
+    "jpeg": "wreath-02-ladder-hang.jpg",
+    "variants": [
+      {
+        "file": "wreath-02-ladder-hang-800w.webp",
+        "format": "webp",
+        "height": 1198,
+        "width": 800
+      },
+      {
+        "file": "wreath-02-ladder-hang-1280w.webp",
+        "format": "webp",
+        "height": 1917,
+        "width": 1280
+      },
+      {
+        "file": "wreath-02-ladder-hang-1600w.webp",
+        "format": "webp",
+        "height": 2397,
+        "width": 1600
+      },
+      {
+        "file": "wreath-02-ladder-hang-4016w.webp",
+        "format": "webp",
+        "height": 6016,
+        "width": 4016
+      }
+    ],
+    "width": 4016
+  },
+  "wreath-03-lit-gable.jpg": {
+    "height": 6016,
+    "jpeg": "wreath-03-lit-gable.jpg",
+    "variants": [
+      {
+        "file": "wreath-03-lit-gable-800w.webp",
+        "format": "webp",
+        "height": 1198,
+        "width": 800
+      },
+      {
+        "file": "wreath-03-lit-gable-1280w.webp",
+        "format": "webp",
+        "height": 1917,
+        "width": 1280
+      },
+      {
+        "file": "wreath-03-lit-gable-1600w.webp",
+        "format": "webp",
+        "height": 2397,
+        "width": 1600
+      },
+      {
+        "file": "wreath-03-lit-gable-4016w.webp",
+        "format": "webp",
+        "height": 6016,
+        "width": 4016
+      }
+    ],
+    "width": 4016
+  },
+  "wreath-hanging.jpg": {
+    "height": 6016,
+    "jpeg": "wreath-hanging.jpg",
+    "variants": [
+      {
+        "file": "wreath-hanging-800w.webp",
+        "format": "webp",
+        "height": 1198,
+        "width": 800
+      },
+      {
+        "file": "wreath-hanging-1280w.webp",
+        "format": "webp",
+        "height": 1917,
+        "width": 1280
+      },
+      {
+        "file": "wreath-hanging-1600w.webp",
+        "format": "webp",
+        "height": 2397,
+        "width": 1600
+      },
+      {
+        "file": "wreath-hanging-4016w.webp",
+        "format": "webp",
+        "height": 6016,
+        "width": 4016
+      }
+    ],
+    "width": 4016
+  }
+}

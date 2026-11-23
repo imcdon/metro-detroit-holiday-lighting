@@ -7,7 +7,10 @@ $page_description = $site_description;
 $canonical_path = '/';
 $schema_home = true;
 $schema_faq = true;
-$preload_image = $hero_image !== '' ? $hero_image : null;
+$preload_image = $hero_image_rel !== '' ? mdhl_preload_image_url($hero_image_rel, 1280) : null;
+if ($preload_image === '') {
+    $preload_image = $hero_image !== '' ? $hero_image : null;
+}
 $body_class = 'page-home';
 
 require __DIR__ . '/includes/header.php';
@@ -15,7 +18,16 @@ require __DIR__ . '/includes/header.php';
 <section class="hero<?= $hero_image !== '' ? ' hero--photo' : '' ?>">
     <?php if ($hero_image !== ''): ?>
         <div class="hero__media" aria-hidden="true">
-            <img src="<?= htmlspecialchars($hero_image) ?>" alt="" width="1600" height="900" fetchpriority="high">
+            <?= mdhl_picture($hero_image_rel, [
+                'alt' => '',
+                'sizes' => MDHL_SIZES_HERO,
+                'width' => 1600,
+                'height' => 900,
+                'loading' => '',
+                'fetchpriority' => 'high',
+                'decoding' => 'async',
+                'aria_hidden' => true,
+            ]) ?>
         </div>
         <div class="hero__shade" aria-hidden="true"></div>
     <?php endif; ?>
@@ -54,7 +66,15 @@ require __DIR__ . '/includes/header.php';
                 <<?= $cardTag ?> class="audience-stage<?= empty($audience['has_image']) ? ' audience-stage--placeholder' : '' ?>"<?= $cardAttrs ?>>
                     <div class="audience-stage__media" aria-hidden="true">
                         <?php if (!empty($audience['has_image'])): ?>
-                            <img src="<?= htmlspecialchars(mdhl_asset_url((string) $audience['image'])) ?>" alt="" width="1200" height="700" loading="lazy" decoding="async">
+                            <?= mdhl_picture((string) $audience['image'], [
+                                'alt' => '',
+                                'sizes' => MDHL_SIZES_CARD,
+                                'width' => 1200,
+                                'height' => 700,
+                                'loading' => 'lazy',
+                                'decoding' => 'async',
+                                'aria_hidden' => true,
+                            ]) ?>
                         <?php endif; ?>
                     </div>
                     <div class="audience-stage__shade" aria-hidden="true"></div>
@@ -84,14 +104,15 @@ require __DIR__ . '/includes/header.php';
                     data-frame="<?= (int) $i ?>"
                     data-caption="<?= htmlspecialchars($frame['caption'], ENT_QUOTES) ?>"
                 >
-                    <img
-                        src="<?= htmlspecialchars($frame['url']) ?>"
-                        alt="<?= htmlspecialchars($frame['alt']) ?>"
-                        width="1600"
-                        height="900"
-                        <?= $i === 0 ? 'fetchpriority="high"' : 'loading="lazy"' ?>
-                        decoding="async"
-                    >
+                    <?= mdhl_picture('assets/img/gallery/' . $frame['file'], [
+                        'alt' => $frame['alt'],
+                        'sizes' => MDHL_SIZES_SCROLL,
+                        'width' => 1600,
+                        'height' => 900,
+                        'loading' => $i === 0 ? '' : 'lazy',
+                        'fetchpriority' => $i === 0 ? 'high' : '',
+                        'decoding' => 'async',
+                    ]) ?>
                 </div>
             <?php endforeach; ?>
         </div>
@@ -144,7 +165,14 @@ require __DIR__ . '/includes/header.php';
         </div>
         <div class="owner__photo<?= $owner_image === '' ? ' owner__photo--empty' : '' ?>">
             <?php if ($owner_image !== ''): ?>
-                <img src="<?= htmlspecialchars(url($owner_image)) ?>" alt="<?= htmlspecialchars($owner_image_alt) ?>" width="900" height="1100" loading="lazy" decoding="async">
+                <?= mdhl_picture($owner_image, [
+                    'alt' => $owner_image_alt,
+                    'sizes' => MDHL_SIZES_SECTION,
+                    'width' => 900,
+                    'height' => 1100,
+                    'loading' => 'lazy',
+                    'decoding' => 'async',
+                ]) ?>
             <?php else: ?>
                 <div class="owner__photo-placeholder" aria-hidden="true"></div>
             <?php endif; ?>

@@ -6,6 +6,25 @@ Custom PHP marketing site for [metrodetroitholidaylighting.com](https://metrodet
 
 `http://localhost/webstar-business-solutions/clients/metro-detroit-holiday-lighting/`
 
+## Photo workflow
+
+Drop full-resolution exports into `assets/img/Untitled Export/`, then sync into gitignored masters and web-ready gallery JPEGs + WebP variants:
+
+```bash
+# Bloomfield Hills
+python bin/sync-bloomfield-exports.py
+
+# Ranch Estates
+python bin/sync-ranch-exports.py
+
+# Rebuild WebP width ladder from existing gallery JPEGs
+python bin/optimize-mdhl-gallery.py --variants-only
+
+php bin/check-missing-images.php
+```
+
+Serve paths always point at `assets/img/gallery/` (never `Untitled Export/`). Templates use `mdhl_picture()` for responsive WebP + JPEG fallback.
+
 ## Git (canonical)
 
 This folder is its own repository. **Do not** commit site changes to `imcdon/webstar`.

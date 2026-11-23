@@ -38,13 +38,14 @@ require dirname(__DIR__) . '/includes/header.php';
             <div class="gallery-grid gallery-grid--landscape">
                 <?php foreach ($gallery_landscape as $img): ?>
                     <a href="<?= htmlspecialchars($img['url']) ?>" target="_blank" rel="noopener noreferrer">
-                        <img
-                            src="<?= htmlspecialchars($img['url']) ?>"
-                            alt="<?= htmlspecialchars($img['alt']) ?>"
-                            loading="lazy"
-                            width="<?= (int) ($img['width'] ?: 900) ?>"
-                            height="<?= (int) ($img['height'] ?: 675) ?>"
-                        >
+                        <?= mdhl_picture((string) ($img['rel'] ?? ('assets/img/gallery/' . $img['file'])), [
+                            'alt' => $img['alt'],
+                            'sizes' => MDHL_SIZES_GALLERY,
+                            'width' => (int) ($img['width'] ?: 900),
+                            'height' => (int) ($img['height'] ?: 675),
+                            'loading' => 'lazy',
+                            'decoding' => 'async',
+                        ]) ?>
                     </a>
                 <?php endforeach; ?>
             </div>
@@ -53,13 +54,14 @@ require dirname(__DIR__) . '/includes/header.php';
             <div class="gallery-grid gallery-grid--portrait<?= $gallery_landscape !== [] ? ' gallery-grid--portrait-below' : '' ?>">
                 <?php foreach ($gallery_portrait as $img): ?>
                     <a href="<?= htmlspecialchars($img['url']) ?>" target="_blank" rel="noopener noreferrer">
-                        <img
-                            src="<?= htmlspecialchars($img['url']) ?>"
-                            alt="<?= htmlspecialchars($img['alt']) ?>"
-                            loading="lazy"
-                            width="<?= (int) ($img['width'] ?: 600) ?>"
-                            height="<?= (int) ($img['height'] ?: 900) ?>"
-                        >
+                        <?= mdhl_picture((string) ($img['rel'] ?? ('assets/img/gallery/' . $img['file'])), [
+                            'alt' => $img['alt'],
+                            'sizes' => MDHL_SIZES_GALLERY,
+                            'width' => (int) ($img['width'] ?: 600),
+                            'height' => (int) ($img['height'] ?: 900),
+                            'loading' => 'lazy',
+                            'decoding' => 'async',
+                        ]) ?>
                     </a>
                 <?php endforeach; ?>
             </div>

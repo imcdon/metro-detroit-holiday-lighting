@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-/** Web gallery basenames replaced by mdhl-bloomfield-hills-7/8/9/11 — hide from public index. */
-const MDHL_GALLERY_HIDDEN = [
-    'mdhl-bloomfield-hills-1.jpg',
-    'mdhl-bloomfield-hills-2.jpg',
-    'mdhl-bloomfield-hills-3.jpg',
-    'mdhl-bloomfield-hills-4.jpg',
-];
+/** Basenames excluded from the public gallery index / match strips (empty = show all). */
+const MDHL_GALLERY_HIDDEN = [];
+
+/** Responsive sizes presets for mdhl_picture(). */
+const MDHL_SIZES_HERO = '(max-width: 768px) 100vw, 1280px';
+const MDHL_SIZES_SECTION = '(max-width: 900px) 100vw, 640px';
+const MDHL_SIZES_CARD = '(max-width: 900px) 100vw, 400px';
+const MDHL_SIZES_GALLERY = '(max-width: 600px) 50vw, 400px';
+const MDHL_SIZES_SCROLL = '100vw';
 
 /**
  * Project-relative asset URL with cache-busting filemtime (gallery, img, etc.).
@@ -55,6 +57,185 @@ function mdhl_image_dimensions_from_rel(string $rel): array
 }
 
 /**
+ * @return array<string, array<string, mixed>>
+ */
+function mdhl_variants_manifest(): array
+{
+    static $cache = null;
+    if (is_array($cache)) {
+        return $cache;
+    }
+
+    $path = dirname(__DIR__) . '/assets/img/gallery/.variants-manifest.json';
+    if (!is_file($path)) {
+        $cache = [];
+        return $cache;
+    }
+
+    $raw = file_get_contents($path);
+    if ($raw === false || $raw === '') {
+        $cache = [];
+        return $cache;
+    }
+
+    $decoded = json_decode($raw, true);
+    $cache = is_array($decoded) ? $decoded : [];
+
+    return $cache;
+}
+
+/**
+ * Best WebP (or JPEG fallback) URL for preload / LCP near $preferWidth.
+ */
+function mdhl_preload_image_url(string $rel, int $preferWidth = 1280): string
+{
+    $rel = ltrim(str_replace('\\', '/', $rel), '/');
+    if ($rel === '') {
+        return '';
+    }
+
+    $basename = basename($rel);
+    $entry = mdhl_variants_manifest()[$basename] ?? null;
+    if (!is_array($entry)) {
+        return is_file(dirname(__DIR__) . '/' . $rel) ? mdhl_asset_url($rel) : '';
+    }
+
+    $variants = $entry['variants'] ?? [];
+    if (!is_array($variants) || $variants === []) {
+        return mdhl_asset_url($rel);
+    }
+
+    $best = null;
+    $bestDelta = PHP_INT_MAX;
+    foreach ($variants as $variant) {
+        if (!is_array($variant) || ($variant['format'] ?? '') !== 'webp') {
+            continue;
+        }
+        $w = (int) ($variant['width'] ?? 0);
+        $file = (string) ($variant['file'] ?? '');
+        if ($w < 1 || $file === '') {
+            continue;
+        }
+        $delta = abs($w - $preferWidth);
+        if ($delta < $bestDelta) {
+            $bestDelta = $delta;
+            $best = $file;
+        }
+    }
+
+    if ($best === null) {
+        return mdhl_asset_url($rel);
+    }
+
+    $dir = dirname($rel);
+    $webpRel = ($dir === '.' ? '' : $dir . '/') . $best;
+
+    return mdhl_asset_url($webpRel);
+}
+
+/**
+ * Emit a responsive <picture> (WebP srcset + JPEG fallback) when variants exist.
+ *
+ * @param array{
+ *   alt?:string,
+ *   sizes?:string,
+ *   class?:string,
+ *   width?:int,
+ *   height?:int,
+ *   loading?:string,
+ *   fetchpriority?:string,
+ *   decoding?:string,
+ *   aria_hidden?:bool
+ * } $opts
+ */
+function mdhl_picture(string $rel, array $opts = []): string
+{
+    $rel = ltrim(str_replace('\\', '/', $rel), '/');
+    if ($rel === '' || !is_file(dirname(__DIR__) . '/' . $rel)) {
+        return '';
+    }
+
+    $alt = (string) ($opts['alt'] ?? '');
+    $sizes = (string) ($opts['sizes'] ?? MDHL_SIZES_SECTION);
+    $class = (string) ($opts['class'] ?? '');
+    $loading = (string) ($opts['loading'] ?? 'lazy');
+    $decoding = (string) ($opts['decoding'] ?? 'async');
+    $fetchpriority = (string) ($opts['fetchpriority'] ?? '');
+    $ariaHidden = !empty($opts['aria_hidden']);
+
+    $dims = mdhl_image_dimensions_from_rel($rel);
+    $width = (int) ($opts['width'] ?? $dims['width'] ?: 0);
+    $height = (int) ($opts['height'] ?? $dims['height'] ?: 0);
+
+    $basename = basename($rel);
+    $entry = mdhl_variants_manifest()[$basename] ?? null;
+    $webpSrcset = '';
+    if (is_array($entry) && !empty($entry['variants']) && is_array($entry['variants'])) {
+        $parts = [];
+        $dir = dirname($rel);
+        foreach ($entry['variants'] as $variant) {
+            if (!is_array($variant) || ($variant['format'] ?? '') !== 'webp') {
+                continue;
+            }
+            $w = (int) ($variant['width'] ?? 0);
+            $file = (string) ($variant['file'] ?? '');
+            if ($w < 1 || $file === '') {
+                continue;
+            }
+            $webpRel = ($dir === '.' ? '' : $dir . '/') . $file;
+            if (!is_file(dirname(__DIR__) . '/' . $webpRel)) {
+                continue;
+            }
+            $parts[] = mdhl_asset_url($webpRel) . ' ' . $w . 'w';
+        }
+        $webpSrcset = implode(', ', $parts);
+        if ($width < 1 && isset($entry['width'])) {
+            $width = (int) $entry['width'];
+        }
+        if ($height < 1 && isset($entry['height'])) {
+            $height = (int) $entry['height'];
+        }
+    }
+
+    $imgAttrs = [
+        'src="' . htmlspecialchars(mdhl_asset_url($rel)) . '"',
+        'alt="' . htmlspecialchars($alt) . '"',
+    ];
+    if ($width > 0) {
+        $imgAttrs[] = 'width="' . $width . '"';
+    }
+    if ($height > 0) {
+        $imgAttrs[] = 'height="' . $height . '"';
+    }
+    if ($class !== '') {
+        $imgAttrs[] = 'class="' . htmlspecialchars($class) . '"';
+    }
+    if ($loading !== '') {
+        $imgAttrs[] = 'loading="' . htmlspecialchars($loading) . '"';
+    }
+    if ($decoding !== '') {
+        $imgAttrs[] = 'decoding="' . htmlspecialchars($decoding) . '"';
+    }
+    if ($fetchpriority !== '') {
+        $imgAttrs[] = 'fetchpriority="' . htmlspecialchars($fetchpriority) . '"';
+    }
+    if ($ariaHidden) {
+        $imgAttrs[] = 'aria-hidden="true"';
+    }
+
+    if ($webpSrcset === '') {
+        return '<img ' . implode(' ', $imgAttrs) . '>';
+    }
+
+    $imgAttrs[] = 'sizes="' . htmlspecialchars($sizes) . '"';
+
+    return '<picture>'
+        . '<source type="image/webp" srcset="' . htmlspecialchars($webpSrcset) . '" sizes="' . htmlspecialchars($sizes) . '">'
+        . '<img ' . implode(' ', $imgAttrs) . '>'
+        . '</picture>';
+}
+
+/**
  * List gallery image files from assets/img/gallery/.
  *
  * @return list<array{file:string,url:string,alt:string}>
@@ -72,7 +253,11 @@ function mdhl_gallery_images(): array
         if ($file === '.' || $file === '..') {
             continue;
         }
-        if (!preg_match('/\.(jpe?g|png|webp)$/i', $file)) {
+        // Primary gallery items are JPEG/PNG only; skip WebP width variants.
+        if (!preg_match('/\.(jpe?g|png)$/i', $file)) {
+            continue;
+        }
+        if (preg_match('/-\d+w\.(jpe?g|png)$/i', $file)) {
             continue;
         }
         if (in_array($file, MDHL_GALLERY_HIDDEN, true)) {
@@ -99,6 +284,7 @@ function mdhl_gallery_images(): array
         $out[] = [
             'file' => $file,
             'url' => mdhl_asset_url('assets/img/gallery/' . $file),
+            'rel' => 'assets/img/gallery/' . $file,
             'alt' => 'Holiday lighting by Metro Detroit Holiday Lighting — ' . $label,
             'width' => $width,
             'height' => $height,

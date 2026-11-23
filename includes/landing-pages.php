@@ -21,13 +21,12 @@ function mdhl_landing_pages(): array
             'hero_alt' => 'Bloomfield Hills estate with lighted wreaths, green tree wraps, and step lighting at night',
             'service_name' => 'Residential holiday lighting and décor',
             'gallery_heading' => 'Residential Installs',
-            'gallery_match' => ['/^residential-/i', '/mdhl-bloomfield-hills/i'],
-            'gallery_files' => [
-                'mdhl-bloomfield-hills-9.jpg',
-                'mdhl-bloomfield-hills-7.jpg',
-                'mdhl-bloomfield-hills-8.jpg',
-                'mdhl-bloomfield-hills-11.jpg',
+            'gallery_match' => [
+                '/^residential-/i',
+                '/mdhl-bloomfield-hills/i',
+                '/mdhl-ranch-estates/i',
             ],
+            'gallery_limit' => 0,
             'related' => ['wreaths', 'tree-wraps', 'high-roof-lighting'],
             'sections' => [
                 [
@@ -39,21 +38,21 @@ function mdhl_landing_pages(): array
                         'Artificial lit greenery',
                         'Walkways and entrances',
                     ],
-                    'image' => 'assets/img/gallery/mdhl-bloomfield-hills-7.jpg',
-                    'image_alt' => 'Bloomfield Hills brick home with green wrapped trees and warm white branch lighting',
+                    'image' => 'assets/img/gallery/mdhl-bloomfield-hills-4.jpg',
+                    'image_alt' => 'Bloomfield Hills home with professional holiday lighting',
                 ],
                 [
                     'h2' => 'Holiday Light installers Metro Detroit homeowners can trust',
                     'body' => 'Steve works with you directly from the first quote to the final take down instilling an “owners touch” on every job he takes on.',
-                    'image' => 'assets/img/gallery/mdhl-bloomfield-hills-8.jpg',
-                    'image_alt' => 'Bloomfield Hills brick home with step lights, wreaths, and wrapped trees at night',
+                    'image' => 'assets/img/gallery/mdhl-ranch-estates-1.jpg',
+                    'image_alt' => 'Metro Detroit ranch estate with wrapped tree, lit shrubs, and warm entry lighting at night',
                     'image_fit' => 'natural',
                 ],
                 [
                     'h2' => 'Service across Oakland, Wayne, Macomb, and Genesee County',
                     'body' => 'We install holiday lighting for homes throughout southeastern Michigan—including Birmingham, Troy, Rochester Hills, Waterford, Clarkston, and neighboring Oakland communities, plus Genesee County cities such as Grand Blanc, Fenton, Flint, and Davison. Browse Service Areas for your city or call (248) 525-4715.',
-                    'image' => 'assets/img/gallery/mdhl-bloomfield-hills-9.jpg',
-                    'image_alt' => 'Bloomfield Hills estate with wreaths, green tree wraps, and landscape lighting at night',
+                    'image' => 'assets/img/gallery/mdhl-ranch-estates-11.jpg',
+                    'image_alt' => 'Ranch estate with roofline lights, blue-wrapped tree, wreath on gable, and arched entry at night',
                 ],
             ],
             'faq' => [

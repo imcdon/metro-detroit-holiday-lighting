@@ -36,14 +36,20 @@ $landing_hero = ($hero_file !== '' && is_file($hero_file)) ? mdhl_asset_url($her
 $landing_hero_alt = (string) ($landing['hero_alt'] ?? $landing['nav_label']);
 if ($landing_hero !== '') {
     $og_image = absolute_url(ltrim($hero_rel, '/'));
-    $preload_image = $landing_hero;
+    $preload_image = mdhl_preload_image_url($hero_rel, 1280);
+    if ($preload_image === '') {
+        $preload_image = $landing_hero;
+    }
 }
 $landing_hero_dims = $landing_hero !== '' ? mdhl_image_dimensions_from_rel($hero_rel) : ['width' => 0, 'height' => 0];
 
 if (!empty($landing['gallery_files']) && is_array($landing['gallery_files'])) {
     $gallery_strip = mdhl_gallery_pick_files($landing['gallery_files']);
 } else {
-    $gallery_strip = mdhl_gallery_for_landing($landing['gallery_match'] ?? [], 6);
+    $gallery_strip = mdhl_gallery_for_landing(
+        $landing['gallery_match'] ?? [],
+        (int) ($landing['gallery_limit'] ?? 6)
+    );
 }
 
 $related_slugs = $landing['related'] ?? [];
@@ -74,14 +80,15 @@ require __DIR__ . '/header.php';
         </div>
         <?php if ($landing_hero !== ''): ?>
             <div class="landing-hero__media">
-                <img
-                    src="<?= htmlspecialchars($landing_hero) ?>"
-                    alt="<?= htmlspecialchars($landing_hero_alt) ?>"
-                    width="<?= (int) ($landing_hero_dims['width'] ?: 900) ?>"
-                    height="<?= (int) ($landing_hero_dims['height'] ?: 700) ?>"
-                    fetchpriority="high"
-                    decoding="async"
-                >
+                <?= mdhl_picture($hero_rel, [
+                    'alt' => $landing_hero_alt,
+                    'sizes' => MDHL_SIZES_HERO,
+                    'width' => (int) ($landing_hero_dims['width'] ?: 900),
+                    'height' => (int) ($landing_hero_dims['height'] ?: 700),
+                    'loading' => '',
+                    'fetchpriority' => 'high',
+                    'decoding' => 'async',
+                ]) ?>
             </div>
         <?php endif; ?>
     </div>
@@ -113,14 +120,14 @@ require __DIR__ . '/header.php';
         </div>
         <?php if ($hasPanelImage): ?>
             <div class="landing-panel__media landing-panel__media--natural">
-                <img
-                    src="<?= htmlspecialchars($sectionImageUrl) ?>"
-                    alt="<?= htmlspecialchars($sectionImageAlt) ?>"
-                    width="<?= $imgWidth ?>"
-                    height="<?= $imgHeight ?>"
-                    loading="lazy"
-                    decoding="async"
-                >
+                <?= mdhl_picture($sectionImageRel, [
+                    'alt' => $sectionImageAlt,
+                    'sizes' => MDHL_SIZES_SECTION,
+                    'width' => $imgWidth,
+                    'height' => $imgHeight,
+                    'loading' => 'lazy',
+                    'decoding' => 'async',
+                ]) ?>
             </div>
         <?php endif; ?>
     </div>
@@ -137,14 +144,14 @@ require __DIR__ . '/header.php';
         <div class="gallery-preview">
             <?php foreach ($gallery_strip as $img): ?>
                 <a href="<?= htmlspecialchars(url('gallery/')) ?>">
-                    <img
-                        src="<?= htmlspecialchars($img['url']) ?>"
-                        alt="<?= htmlspecialchars($img['alt']) ?>"
-                        loading="lazy"
-                        decoding="async"
-                        width="<?= (int) ($img['width'] ?: 800) ?>"
-                        height="<?= (int) ($img['height'] ?: 600) ?>"
-                    >
+                    <?= mdhl_picture((string) ($img['rel'] ?? ('assets/img/gallery/' . $img['file'])), [
+                        'alt' => $img['alt'],
+                        'sizes' => MDHL_SIZES_GALLERY,
+                        'width' => (int) ($img['width'] ?: 800),
+                        'height' => (int) ($img['height'] ?: 600),
+                        'loading' => 'lazy',
+                        'decoding' => 'async',
+                    ]) ?>
                 </a>
             <?php endforeach; ?>
         </div>

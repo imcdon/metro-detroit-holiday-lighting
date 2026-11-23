@@ -71,7 +71,10 @@ def main() -> None:
             print(f"removed gallery/{stray.name}")
 
     opt = ROOT / "bin" / "optimize-mdhl-gallery.py"
-    subprocess.check_call([sys.executable, str(opt)], cwd=ROOT)
+    subprocess.check_call(
+        [sys.executable, str(opt), "--project", "bloomfield-hills"],
+        cwd=ROOT,
+    )
 
 
 if __name__ == "__main__":

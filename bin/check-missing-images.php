@@ -39,12 +39,22 @@ foreach ($scroll_frames as $frame) {
     $check('assets/img/gallery/' . $frame['file']);
 }
 
-foreach (['mdhl-bloomfield-hills-7.jpg', 'mdhl-bloomfield-hills-8.jpg', 'mdhl-bloomfield-hills-9.jpg', 'mdhl-bloomfield-hills-11.jpg'] as $bh) {
+foreach ([
+    'mdhl-bloomfield-hills-1.jpg',
+    'mdhl-bloomfield-hills-4.jpg',
+    'mdhl-bloomfield-hills-7.jpg',
+    'mdhl-bloomfield-hills-8.jpg',
+    'mdhl-bloomfield-hills-9.jpg',
+    'mdhl-bloomfield-hills-11.jpg',
+    'mdhl-ranch-estates-1.jpg',
+    'mdhl-ranch-estates-11.jpg',
+] as $bh) {
     $check('assets/img/gallery/' . $bh);
 }
 $check('assets/img/gallery/hanging-the-wreath.jpg');
 $check('assets/img/logo-new.png');
 $check('assets/img/favicon.png');
+$check('assets/img/gallery/.variants-manifest.json');
 
 // Gallery files that used to exist but may have been deleted (orphans from older names)
 foreach ([

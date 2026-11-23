@@ -156,9 +156,9 @@ $scroll_frame_defs = [
         'alt' => 'Bloomfield Hills home with green tree wraps and warm white branch lighting at night',
     ],
     [
-        'file' => 'mdhl-bloomfield-hills-8.jpg',
-        'caption' => 'Wreaths, steps, and trees lit for the season',
-        'alt' => 'Bloomfield Hills brick home with lighted wreaths, step lights, and wrapped trees at night',
+        'file' => 'mdhl-bloomfield-hills-1.jpg',
+        'caption' => 'Warm white wraps on trees and landscape after dark',
+        'alt' => 'Bloomfield Hills home with warm white tree and landscape holiday lighting at night',
     ],
 ];
 
